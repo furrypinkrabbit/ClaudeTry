@@ -1,0 +1,491 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1932" style="background:#FAEFD6"><style>text{font-family:"Noto Sans CJK SC","WenQuanYi Zen Hei",sans-serif}</style><rect width="1200" height="1932" fill="#FAEFD6"/><text x="600" y="30" text-anchor="middle" font-size="26" fill="#1C1A17" font-weight="700">古建修补匠 · SVG 素材统一预览</text><text x="600" y="52" text-anchor="middle" font-size="13" fill="#7A1E12">朱砂红 · 墨黑 · 宣纸米 · 青黛 · 鎏金 · 残缺朱</text><text x="24" y="92" font-size="18" fill="#1C1A17" font-weight="700">Logo</text><line x1="24" y1="100" x2="1176" y2="100" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 3"/><g transform="translate(24 112)"><svg viewBox="0 0 256 256" width="160" height="160">
+  <defs>
+    <pattern id="paper" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="4" fill="#F2E5C8"/>
+      <path d="M0 4L4 0" stroke="#E8D9B5" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <!-- 朱砂圆印底 -->
+  <circle cx="128" cy="128" r="120" fill="url(#paper)" stroke="#1C1A17" stroke-width="3"/>
+  <circle cx="128" cy="128" r="112" fill="none" stroke="#B8352F" stroke-width="2"/>
+
+  <!-- 斗拱剪影（屋檐结构） -->
+  <g stroke="#1C1A17" stroke-width="3" stroke-linejoin="miter" fill="#3E5C76">
+    <!-- 屋脊 -->
+    <path d="M36 96 L128 48 L220 96 Z"/>
+    <!-- 正脊装饰 -->
+    <rect x="120" y="40" width="16" height="10" fill="#C9A24C"/>
+    <!-- 主梁 -->
+    <rect x="44"  y="96" width="168" height="16" fill="#1C1A17"/>
+    <!-- 斗拱三组 -->
+    <g fill="#B8352F">
+      <rect x="60"  y="116" width="24" height="14"/>
+      <rect x="116" y="116" width="24" height="14"/>
+      <rect x="172" y="116" width="24" height="14"/>
+    </g>
+    <g fill="#C9A24C">
+      <rect x="66"  y="132" width="12" height="10"/>
+      <rect x="122" y="132" width="12" height="10"/>
+      <rect x="178" y="132" width="12" height="10"/>
+    </g>
+    <!-- 柱 -->
+    <rect x="62"  y="146" width="12" height="44" fill="#1C1A17"/>
+    <rect x="122" y="146" width="12" height="44" fill="#1C1A17"/>
+    <rect x="182" y="146" width="12" height="44" fill="#1C1A17"/>
+  </g>
+
+  <!-- 锤子 横压中央 -->
+  <g transform="translate(128 138) rotate(-18)">
+    <rect x="-44" y="-6" width="92" height="12" rx="2" fill="#8A5A2B" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="40" y="-18" width="36" height="36" rx="3" fill="#C9A24C" stroke="#1C1A17" stroke-width="2.5"/>
+    <rect x="44" y="-14" width="28" height="6" fill="#B8352F"/>
+    <rect x="44" y="8"  width="28" height="6" fill="#7A1E12"/>
+    <!-- 锤柄缠绳 -->
+    <g stroke="#1C1A17" stroke-width="1.5">
+      <line x1="-38" y1="-6" x2="-34" y2="6"/>
+      <line x1="-28" y1="-6" x2="-24" y2="6"/>
+      <line x1="-18" y1="-6" x2="-14" y2="6"/>
+    </g>
+  </g>
+
+  <!-- 云雷纹 围边 -->
+  <g fill="none" stroke="#1C1A17" stroke-width="1.5">
+    <path d="M22 200 q6 -10 16 -4 q10 10 0 14 q-10 4 -16 -4 Z" />
+    <path d="M218 200 q6 -10 16 -4 q10 10 0 14 q-10 4 -16 -4 Z" />
+  </g>
+
+  <!-- 标题 -->
+  <g font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" text-anchor="middle">
+    <text x="128" y="218" font-size="24" fill="#1C1A17" font-weight="700" letter-spacing="6">古建修补匠</text>
+    <text x="128" y="236" font-size="11" fill="#7A1E12" letter-spacing="8">GU JIAN ROGUELIKE</text>
+  </g>
+</svg></g><text x="104.0" y="288" text-anchor="middle" font-size="11" fill="#1C1A17">logo_gujian</text><text x="24" y="352" font-size="18" fill="#1C1A17" font-weight="700">Tools</text><line x1="24" y1="360" x2="1176" y2="360" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 3"/><g transform="translate(24 372)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#3E5C76" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+  <g transform="translate(64 64) rotate(-30)">
+    <rect x="-40" y="-4" width="60" height="8" rx="2" fill="#8A5A2B" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="-40" y="-6" width="14" height="12" fill="#1C1A17" rx="1"/>
+    <rect x="14" y="-20" width="34" height="40" rx="2" fill="#3E5C76" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="14" y="-20" width="34" height="6" fill="#1C1A17"/>
+    <rect x="14" y="14"  width="34" height="6" fill="#1C1A17"/>
+    <circle cx="31" cy="0" r="5" fill="#C9A24C" stroke="#1C1A17"/>
+    <circle cx="31" cy="0" r="2" fill="#B8352F"/>
+    <!-- 极简盘长纹嘴件 -->
+    <path d="M18 -18 h28" stroke="#C9A24C" stroke-width="1"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">鸢铁锤</text>
+</svg></g><text x="104.0" y="548" text-anchor="middle" font-size="11" fill="#1C1A17">hammer_iron</text><g transform="translate(196 372)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#C9A24C" stroke-width="2" stroke-dasharray="2 2" opacity="0.7"/>
+  <g transform="translate(64 64) rotate(-30)">
+    <rect x="-40" y="-4" width="60" height="8" rx="2" fill="#B8352F" stroke="#1C1A17" stroke-width="2"/>
+    <g stroke="#C9A24C" stroke-width="1.2" opacity="0.9">
+      <line x1="-34" y1="-4" x2="-30" y2="4"/>
+      <line x1="-22" y1="-4" x2="-18" y2="4"/>
+      <line x1="-10" y1="-4" x2="-6" y2="4"/>
+    </g>
+    <!-- 玉锤头淡青色 -->
+    <rect x="14" y="-22" width="34" height="44" rx="6" fill="#A9C4B1" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="14" y="-22" width="34" height="8"  fill="#C9A24C"/>
+    <rect x="14" y="14"  width="34" height="8"  fill="#C9A24C"/>
+    <!-- 玉脉 -->
+    <g stroke="#1C1A17" stroke-width="0.8" fill="none" opacity="0.6">
+      <path d="M20 -10 q10 6 20 2"/>
+      <path d="M20 2  q10 6 20 2"/>
+    </g>
+    <circle cx="31" cy="0" r="4" fill="#B8352F" stroke="#1C1A17"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">玉斗锤</text>
+</svg></g><text x="276.0" y="548" text-anchor="middle" font-size="11" fill="#1C1A17">hammer_jade</text><g transform="translate(368 372)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#1C1A17" stroke-width="2" stroke-dasharray="4 3" opacity="0.4"/>
+  <g transform="translate(64 64) rotate(-30)">
+    <rect x="-40" y="-4" width="60" height="8" rx="2" fill="#8A5A2B" stroke="#1C1A17" stroke-width="2"/>
+    <g stroke="#1C1A17" stroke-width="1" opacity="0.6">
+      <line x1="-34" y1="-4" x2="-30" y2="4"/>
+      <line x1="-22" y1="-4" x2="-18" y2="4"/>
+      <line x1="-10" y1="-4" x2="-6" y2="4"/>
+    </g>
+    <rect x="16" y="-16" width="28" height="32" rx="2" fill="#A06C3B" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="20" y="-12" width="20" height="4" fill="#7A1E12"/>
+    <rect x="20" y="8"   width="20" height="4" fill="#7A1E12"/>
+    <circle cx="30" cy="0" r="3" fill="#C9A24C" stroke="#1C1A17"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">木梁锤</text>
+</svg></g><text x="448.0" y="548" text-anchor="middle" font-size="11" fill="#1C1A17">hammer_wood</text><text x="24" y="612" font-size="18" fill="#1C1A17" font-weight="700">Enemies</text><line x1="24" y1="620" x2="1176" y2="620" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 3"/><g transform="translate(24 632)"><svg viewBox="0 0 256 256" width="160" height="160">
+  <rect width="256" height="256" fill="#F2E5C8"/>
+  <!-- 光轮 -->
+  <circle cx="128" cy="128" r="120" fill="none" stroke="#C9A24C" stroke-width="2" stroke-dasharray="4 4" opacity="0.7"/>
+  <circle cx="128" cy="128" r="104" fill="none" stroke="#B8352F" stroke-width="1" opacity="0.5"/>
+
+  <!-- 宝座演化的正殿 -->
+  <g stroke="#1C1A17" stroke-width="2.5">
+    <!-- 屋顶 -->
+    <path d="M40 120 L128 56 L216 120 L200 128 L56 128 Z" fill="#3E5C76"/>
+    <!-- 正脉中爆 -->
+    <rect x="118" y="50" width="20" height="14" fill="#B8352F"/>
+    <!-- 洗角 (鸱吻化身) -->
+    <path d="M40 120 q-20 -20 -10 -40" fill="none" stroke="#7A1E12" stroke-width="3"/>
+    <path d="M216 120 q20 -20 10 -40" fill="none" stroke="#7A1E12" stroke-width="3"/>
+    <!-- 主棁 -->
+    <rect x="52" y="128" width="152" height="16" fill="#1C1A17"/>
+    <!-- 斗拱 3 组 -->
+    <g fill="#B8352F">
+      <rect x="64"  y="146" width="24" height="12"/>
+      <rect x="116" y="146" width="24" height="12"/>
+      <rect x="168" y="146" width="24" height="12"/>
+    </g>
+    <!-- 台基 -->
+    <rect x="44"  y="200" width="168" height="10" fill="#A06C3B"/>
+    <rect x="36"  y="210" width="184" height="16" fill="#8A5A2B"/>
+  </g>
+
+  <!-- 灵尊‘眼睛’ -->
+  <g>
+    <circle cx="128" cy="96" r="12" fill="#F2E5C8" stroke="#1C1A17" stroke-width="2"/>
+    <circle cx="128" cy="96" r="6"  fill="#B8352F"/>
+    <circle cx="128" cy="96" r="2"  fill="#1C1A17"/>
+  </g>
+
+  <!-- 金光光芉 -->
+  <g stroke="#C9A24C" stroke-width="2" opacity="0.8">
+    <line x1="128" y1="60" x2="128" y2="40"/>
+    <line x1="98"  y1="68" x2="86"  y2="56"/>
+    <line x1="158" y1="68" x2="170" y2="56"/>
+    <line x1="70"  y1="86" x2="50"  y2="80"/>
+    <line x1="186" y1="86" x2="206" y2="80"/>
+  </g>
+
+  <!-- 大的断裂溯迹（表现残缺） -->
+  <g stroke="#7A1E12" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M80 128 L96 148 L84 156"/>
+    <path d="M168 128 L184 148 L176 156"/>
+    <path d="M128 144 L136 172 L120 188"/>
+  </g>
+
+  <text x="128" y="246" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="16" fill="#1C1A17" letter-spacing="4">古建·灵尊</text>
+</svg></g><text x="104.0" y="808" text-anchor="middle" font-size="11" fill="#1C1A17">boss_linzun</text><g transform="translate(196 632)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 精英光环 -->
+  <circle cx="64" cy="62" r="52" fill="none" stroke="#C9A24C" stroke-width="2" stroke-dasharray="3 3"/>
+  <!-- 鸱吻形 -->
+  <g stroke="#1C1A17" stroke-width="2" stroke-linejoin="round">
+    <!-- 身体 -->
+    <path d="M22 92 L30 56 Q44 30 66 34 Q88 38 96 56 L104 92 Z" fill="#7A1E12"/>
+    <!-- 头顶鹠尾 -->
+    <path d="M92 48 Q108 34 102 20 Q94 28 88 40 Z" fill="#B8352F"/>
+    <!-- 尾巴缺失 -->
+    <path d="M22 92 L18 78 L24 80" fill="#F2E5C8" stroke-dasharray="2 2"/>
+    <!-- 鳍鲞 -->
+    <g fill="#3E5C76">
+      <path d="M44 70 q6 -4 10 0 q-4 6 -10 0 Z"/>
+      <path d="M62 74 q6 -4 10 0 q-4 6 -10 0 Z"/>
+    </g>
+    <!-- 眼 -->
+    <circle cx="82" cy="52" r="3" fill="#F2E5C8"/>
+    <circle cx="82" cy="52" r="1.5" fill="#1C1A17"/>
+  </g>
+  <!-- 血裂纹 -->
+  <path d="M60 70 L66 84 L56 92" stroke="#1C1A17" stroke-width="1.5" fill="none"/>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#C9A24C" stroke="#1C1A17" stroke-width="0.3">裂鸱吻（精英）</text>
+</svg></g><text x="276.0" y="808" text-anchor="middle" font-size="11" fill="#1C1A17">structure_chiwen</text><g transform="translate(368 632)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 斗：梁上方块 -->
+  <g stroke="#1C1A17" stroke-width="2" stroke-linejoin="miter">
+    <rect x="20"  y="88" width="88" height="10" fill="#8A5A2B"/>
+    <rect x="48"  y="68" width="32" height="20" fill="#B8352F"/>
+    <!-- 拱：上方横木，断裂 -->
+    <path d="M12 60 L58 60 L62 68 L66 68 L70 60 L116 60 L116 56 L70 56 L66 64 L62 64 L58 56 L12 56 Z" fill="#A06C3B"/>
+    <!-- 缺失一块 -->
+    <path d="M78 56 L90 56 L86 60 L78 60 Z" fill="#F2E5C8" stroke-dasharray="2 2"/>
+    <!-- 裂文 -->
+    <path d="M30 56 L34 64 L38 60" fill="none"/>
+  </g>
+  <!-- 鸟颛 矐 -->
+  <g fill="#1C1A17">
+    <circle cx="56" cy="78" r="2.5"/>
+    <circle cx="72" cy="78" r="2.5"/>
+  </g>
+  <!-- 骨架目形：残缺感 -->
+  <path d="M52 86 q6 6 12 0 q6 6 12 0" fill="none" stroke="#7A1E12" stroke-width="2"/>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#7A1E12">残斗拱</text>
+</svg></g><text x="448.0" y="808" text-anchor="middle" font-size="11" fill="#1C1A17">structure_dougong</text><g transform="translate(540 632)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 雀暿：上棁下折的雕花木片 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <path d="M16 40 L112 40 L112 52 L80 52 L64 88 L48 52 L16 52 Z" fill="#A06C3B"/>
+    <!-- 装饰雕花 -->
+    <g fill="#B8352F" stroke="#1C1A17" stroke-width="1">
+      <circle cx="32" cy="46" r="4"/>
+      <circle cx="96" cy="46" r="4"/>
+      <path d="M56 62 q8 4 16 0 q-2 8 -8 10 q-6 -2 -8 -10 Z"/>
+    </g>
+    <!-- 断裂 -->
+    <path d="M48 52 L40 58 L36 54" stroke="#7A1E12" stroke-width="2" fill="none"/>
+    <path d="M80 52 L88 58 L92 54" stroke="#7A1E12" stroke-width="2" fill="none"/>
+    <!-- 缺口 -->
+    <polygon points="68,86 76,92 60,92" fill="#F2E5C8" stroke-dasharray="2 2"/>
+  </g>
+  <!-- 眼 -->
+  <g fill="#1C1A17">
+    <circle cx="50" cy="60" r="2"/>
+    <circle cx="78" cy="60" r="2"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#7A1E12">残雀暿</text>
+</svg></g><text x="620.0" y="808" text-anchor="middle" font-size="11" fill="#1C1A17">structure_quetti</text><g transform="translate(712 632)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 榫卯插接，两木未合 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="20" y="50" width="46" height="28" fill="#A06C3B"/>
+    <!-- 榫頭 -->
+    <rect x="66" y="58" width="8"  height="12" fill="#8A5A2B"/>
+    <!-- 另一树 -->
+    <rect x="78" y="50" width="30" height="28" fill="#A06C3B"/>
+    <!-- 卯眼 -->
+    <rect x="80" y="58" width="6"  height="12" fill="#F2E5C8"/>
+    <!-- 碎片 -->
+    <polygon points="74,44 78,40 82,46 78,50" fill="#7A1E12"/>
+    <polygon points="70,84 66,90 74,90"        fill="#7A1E12"/>
+  </g>
+  <!-- 眼睛 -->
+  <g fill="#1C1A17">
+    <circle cx="36" cy="62" r="2.5"/>
+    <circle cx="48" cy="62" r="2.5"/>
+    <circle cx="94" cy="62" r="2.5"/>
+  </g>
+  <path d="M34 70 q6 4 14 0" fill="none" stroke="#7A1E12" stroke-width="2"/>
+  <!-- 粗缺纹 -->
+  <g stroke="#1C1A17" stroke-width="1" opacity="0.5">
+    <line x1="26" y1="56" x2="30" y2="72"/>
+    <line x1="56" y1="56" x2="58" y2="72"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#7A1E12">断榫卯</text>
+</svg></g><text x="792.0" y="808" text-anchor="middle" font-size="11" fill="#1C1A17">structure_sunmao</text><g transform="translate(884 632)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 圆形瓦当，中心图案是云锷纹 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <circle cx="64" cy="62" r="36" fill="#3E5C76"/>
+    <circle cx="64" cy="62" r="30" fill="none" stroke="#C9A24C" stroke-width="1.5"/>
+  </g>
+  <!-- 云纹 -->
+  <g fill="#C9A24C" stroke="#1C1A17" stroke-width="1">
+    <path d="M54 56 q4 -8 14 -6 q10 2 8 10 q-2 8 -10 6 q-8 -2 -12 -10 Z"/>
+    <path d="M66 70 q4 -6 12 -4 q8 2 6 8 q-2 6 -8 4 q-6 -2 -10 -8 Z" opacity="0.9"/>
+  </g>
+  <!-- 断裂 -->
+  <g stroke="#7A1E12" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M32 44 L46 56 L40 60"/>
+    <path d="M96 80 L84 70 L90 66"/>
+  </g>
+  <!-- 缺角 -->
+  <path d="M92 34 L100 44 L82 38 Z" fill="#F2E5C8" stroke="#1C1A17" stroke-dasharray="2 2"/>
+  <g fill="#1C1A17">
+    <circle cx="52" cy="60" r="2"/>
+    <circle cx="76" cy="60" r="2"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#7A1E12">裂瓦当</text>
+</svg></g><text x="964.0" y="808" text-anchor="middle" font-size="11" fill="#1C1A17">structure_wadang</text><text x="24" y="872" font-size="18" fill="#1C1A17" font-weight="700">Upgrades</text><line x1="24" y1="880" x2="1176" y2="880" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 3"/><g transform="translate(24 892)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#B8352F" stroke-width="2"/>
+  <!-- 完整斗拱 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="32" y="56" width="64" height="8" fill="#8A5A2B"/>
+    <path d="M28 42 L100 42 L100 50 L28 50 Z" fill="#A06C3B"/>
+    <rect x="54" y="34" width="20" height="8" fill="#B8352F"/>
+    <!-- 芒星 -->
+    <g fill="#C9A24C">
+      <path d="M64 20 L68 32 L80 32 L70 40 L74 52 L64 44 L54 52 L58 40 L48 32 L60 32 Z"/>
+    </g>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">斗拱承力</text>
+  <text x="64" y="114" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="10" fill="#B8352F">+ 暴击</text>
+</svg></g><text x="104.0" y="1068" text-anchor="middle" font-size="11" fill="#1C1A17">upgrade_dougong_bearing</text><g transform="translate(196 892)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#C9A24C" stroke-width="2"/>
+  <!-- 曲径 -->
+  <path d="M34 66 Q48 34 64 56 Q80 78 96 46" fill="none" stroke="#1C1A17" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 足迹 -->
+  <g fill="#B8352F">
+    <circle cx="40" cy="58" r="2"/>
+    <circle cx="52" cy="46" r="2"/>
+    <circle cx="62" cy="58" r="2"/>
+    <circle cx="74" cy="64" r="2"/>
+    <circle cx="86" cy="56" r="2"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">曲径通幽</text>
+  <text x="64" y="114" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="10" fill="#C9A24C">+ 移速</text>
+</svg></g><text x="276.0" y="1068" text-anchor="middle" font-size="11" fill="#1C1A17">upgrade_qujing</text><g transform="translate(368 892)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#B8352F" stroke-width="2"/>
+  <!-- 榫卯契合 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="36" y="44" width="22" height="16" fill="#A06C3B"/>
+    <rect x="58" y="48" width="6"  height="8"  fill="#8A5A2B"/>
+    <rect x="68" y="44" width="22" height="16" fill="#A06C3B"/>
+    <rect x="66" y="48" width="4"  height="8"  fill="#F2E5C8"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">榫卯加固</text>
+  <text x="64" y="114" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="10" fill="#B8352F">+ 攻击</text>
+</svg></g><text x="448.0" y="1068" text-anchor="middle" font-size="11" fill="#1C1A17">upgrade_sunmao</text><g transform="translate(540 892)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#3E5C76" stroke-width="2"/>
+  <!-- 三层台基 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="44" y="44" width="40" height="6" fill="#C9A24C"/>
+    <rect x="38" y="50" width="52" height="8" fill="#A06C3B"/>
+    <rect x="32" y="58" width="64" height="10" fill="#8A5A2B"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">台基筑基</text>
+  <text x="64" y="114" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="10" fill="#3E5C76">+ 血量</text>
+</svg></g><text x="620.0" y="1068" text-anchor="middle" font-size="11" fill="#1C1A17">upgrade_taiji</text><g transform="translate(712 892)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#7A1E12" stroke-width="2"/>
+  <!-- 瓦当盾状 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <circle cx="64" cy="52" r="22" fill="#3E5C76"/>
+    <circle cx="64" cy="52" r="14" fill="none" stroke="#C9A24C"/>
+    <path d="M58 46 q4 -6 12 -4 q8 2 4 8 q-4 6 -12 2 q-8 -2 -4 -6 Z" fill="#C9A24C"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="12" fill="#1C1A17">瓦当护佑</text>
+  <text x="64" y="114" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="10" fill="#7A1E12">+ 护盾</text>
+</svg></g><text x="792.0" y="1068" text-anchor="middle" font-size="11" fill="#1C1A17">upgrade_wadang_ward</text><text x="24" y="1132" font-size="18" fill="#1C1A17" font-weight="700">Currency</text><line x1="24" y1="1140" x2="1176" y2="1140" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 3"/><g transform="translate(24 1152)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 印章形 "手艺" -->
+  <g stroke="#1C1A17" stroke-width="3">
+    <rect x="28" y="28" width="72" height="72" fill="#B8352F" rx="2"/>
+  </g>
+  <g font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" text-anchor="middle" fill="#F2E5C8" font-weight="700">
+    <text x="64" y="60" font-size="28">手</text>
+    <text x="64" y="90" font-size="28">艺</text>
+  </g>
+  <!-- 磪折 印青飞白 -->
+  <g fill="#F2E5C8" opacity="0.35">
+    <rect x="30" y="30" width="12" height="2"/>
+    <rect x="86" y="96" width="12" height="2"/>
+  </g>
+</svg></g><text x="104.0" y="1328" text-anchor="middle" font-size="11" fill="#1C1A17">currency_craftsmanship</text><g transform="translate(196 1152)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 铜钱：外圆内方 -->
+  <g stroke="#1C1A17" stroke-width="2.5">
+    <circle cx="64" cy="64" r="44" fill="#C9A24C"/>
+    <rect x="52" y="52" width="24" height="24" fill="#F2E5C8"/>
+  </g>
+  <!-- 四诗铭文 -->
+  <g font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" text-anchor="middle" fill="#1C1A17" font-weight="700" font-size="12">
+    <text x="64" y="36">匠</text>
+    <text x="96" y="68">银</text>
+    <text x="64" y="100">通</text>
+    <text x="32" y="68">宝</text>
+  </g>
+  <!-- 边纹 -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#1C1A17" stroke-width="1" stroke-dasharray="2 2" opacity="0.4"/>
+</svg></g><text x="276.0" y="1328" text-anchor="middle" font-size="11" fill="#1C1A17">currency_silver</text><text x="24" y="1392" font-size="18" fill="#1C1A17" font-weight="700">Rooms</text><line x1="24" y1="1400" x2="1176" y2="1400" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 3"/><g transform="translate(24 1412)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="16" y="40" width="96" height="48" fill="#E0C98F"/>
+    <!-- 柱 -->
+    <g fill="#B8352F">
+      <rect x="24" y="40" width="6" height="48"/>
+      <rect x="44" y="40" width="6" height="48"/>
+      <rect x="64" y="40" width="6" height="48"/>
+      <rect x="84" y="40" width="6" height="48"/>
+      <rect x="102" y="40" width="6" height="48"/>
+    </g>
+    <!-- 棁 -->
+    <rect x="16" y="36" width="96" height="8" fill="#A06C3B"/>
+    <rect x="16" y="86" width="96" height="6" fill="#8A5A2B"/>
+    <!-- 地砖 -->
+    <g stroke="#1C1A17" stroke-width="0.5" opacity="0.4">
+      <line x1="24" y1="64" x2="108" y2="64"/>
+    </g>
+  </g>
+  <text x="64" y="120" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#1C1A17">回廊通道</text>
+</svg></g><text x="104.0" y="1588" text-anchor="middle" font-size="11" fill="#1C1A17">room_corridor</text><g transform="translate(196 1412)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="10" y="20" width="108" height="88" fill="#E8D1A2"/>
+    <!-- 中央中堂 -->
+    <rect x="46" y="44" width="36" height="46" fill="#B8352F"/>
+    <!-- 供案 -->
+    <rect x="50" y="56" width="28" height="8" fill="#C9A24C"/>
+    <!-- 棁柱四周 -->
+    <g fill="#1C1A17">
+      <rect x="22" y="34" width="6" height="6"/>
+      <rect x="100" y="34" width="6" height="6"/>
+      <rect x="22" y="92" width="6" height="6"/>
+      <rect x="100" y="92" width="6" height="6"/>
+    </g>
+    <g fill="#3E5C76" opacity="0.8">
+      <rect x="22" y="40" width="6" height="52"/>
+      <rect x="100" y="40" width="6" height="52"/>
+    </g>
+    <!-- 地砖对称 -->
+    <g stroke="#1C1A17" stroke-width="0.5" opacity="0.35">
+      <line x1="28" y1="64" x2="46" y2="64"/>
+      <line x1="82" y1="64" x2="100" y2="64"/>
+      <line x1="64" y1="20" x2="64" y2="108" stroke-dasharray="2 3"/>
+    </g>
+  </g>
+  <text x="64" y="120" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#1C1A17">殿内大厅</text>
+</svg></g><text x="276.0" y="1588" text-anchor="middle" font-size="11" fill="#1C1A17">room_great_hall</text><g transform="translate(368 1412)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 俯视中庭 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="16" y="16" width="96" height="96" fill="#E0C98F"/>
+    <rect x="40" y="24" width="48" height="28" fill="#8A5A2B"/>
+    <rect x="20" y="72" width="20" height="30" fill="#A06C3B"/>
+    <rect x="88" y="72" width="20" height="30" fill="#A06C3B"/>
+    <path d="M40 52 L64 60 L88 52" fill="none"/>
+    <!-- 础石地砖 -->
+    <g stroke="#1C1A17" stroke-width="0.5" opacity="0.35">
+      <line x1="40" y1="62" x2="88" y2="62"/>
+      <line x1="40" y1="80" x2="88" y2="80"/>
+      <line x1="56" y1="52" x2="56" y2="90"/>
+      <line x1="72" y1="52" x2="72" y2="90"/>
+    </g>
+  </g>
+  <text x="64" y="120" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#1C1A17">院落前厅</text>
+</svg></g><text x="448.0" y="1588" text-anchor="middle" font-size="11" fill="#1C1A17">room_outer_yard</text><g transform="translate(540 1412)"><svg viewBox="0 0 128 128" width="160" height="160">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="20" y="28" width="88" height="72" fill="#E0C98F"/>
+    <!-- 两厢 -->
+    <rect x="24" y="34" width="30" height="58" fill="#A06C3B"/>
+    <rect x="74" y="34" width="30" height="58" fill="#A06C3B"/>
+    <rect x="54" y="52" width="20" height="40" fill="#8A5A2B"/>
+    <!-- 茶几 -->
+    <circle cx="40" cy="78" r="4" fill="#C9A24C"/>
+    <circle cx="88" cy="78" r="4" fill="#C9A24C"/>
+  </g>
+  <text x="64" y="120" text-anchor="middle" font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="11" fill="#1C1A17">偏院厢房</text>
+</svg></g><text x="620.0" y="1588" text-anchor="middle" font-size="11" fill="#1C1A17">room_side_wing</text><text x="24" y="1652" font-size="18" fill="#1C1A17" font-weight="700">UI</text><line x1="24" y1="1660" x2="1176" y2="1660" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 3"/><g transform="translate(24 1672)"><svg viewBox="0 0 320 80" width="160" height="160">
+  <defs>
+    <pattern id="hudpaper" patternUnits="userSpaceOnUse" width="6" height="6">
+      <rect width="6" height="6" fill="#F2E5C8"/>
+      <path d="M0 6 L6 0" stroke="#E0C98F" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <!-- 外框 -->
+  <rect x="4" y="4" width="312" height="72" fill="url(#hudpaper)" stroke="#1C1A17" stroke-width="2" rx="4"/>
+  <rect x="8" y="8" width="304" height="64" fill="none" stroke="#B8352F" stroke-width="1" stroke-dasharray="3 2"/>
+  <!-- 血槽 -->
+  <g>
+    <rect x="16" y="16" width="160" height="14" fill="#E8D1A2" stroke="#1C1A17"/>
+    <rect x="16" y="16" width="120" height="14" fill="#B8352F"/>
+    <text x="96"  y="26" text-anchor="middle" font-family="monospace" font-size="10" fill="#F2E5C8">80 / 100</text>
+  </g>
+  <!-- 手艺槽 -->
+  <g>
+    <rect x="16" y="36" width="160" height="10" fill="#E8D1A2" stroke="#1C1A17"/>
+    <rect x="16" y="36" width="72"  height="10" fill="#C9A24C"/>
+  </g>
+  <!-- 槽位图标 -->
+  <g stroke="#1C1A17" stroke-width="1.5">
+    <rect x="200" y="14" width="40" height="40" fill="#F2E5C8"/>
+    <rect x="248" y="14" width="40" height="40" fill="#F2E5C8"/>
+  </g>
+  <g font-family="Noto Sans CJK SC, WenQuanYi Zen Hei, sans-serif" font-size="10" fill="#1C1A17">
+    <text x="220" y="68" text-anchor="middle">锤</text>
+    <text x="268" y="68" text-anchor="middle">凿</text>
+  </g>
+</svg></g><text x="104.0" y="1848" text-anchor="middle" font-size="11" fill="#1C1A17">hud_frame</text></svg>

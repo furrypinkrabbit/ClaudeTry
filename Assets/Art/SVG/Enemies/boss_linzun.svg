@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Boss·古建灵尊">
+  <rect width="256" height="256" fill="#F2E5C8"/>
+  <!-- 光轮 -->
+  <circle cx="128" cy="128" r="120" fill="none" stroke="#C9A24C" stroke-width="2" stroke-dasharray="4 4" opacity="0.7"/>
+  <circle cx="128" cy="128" r="104" fill="none" stroke="#B8352F" stroke-width="1" opacity="0.5"/>
+
+  <!-- 宝座演化的正殿 -->
+  <g stroke="#1C1A17" stroke-width="2.5">
+    <!-- 屋顶 -->
+    <path d="M40 120 L128 56 L216 120 L200 128 L56 128 Z" fill="#3E5C76"/>
+    <!-- 正脉中爆 -->
+    <rect x="118" y="50" width="20" height="14" fill="#B8352F"/>
+    <!-- 洗角 (鸱吻化身) -->
+    <path d="M40 120 q-20 -20 -10 -40" fill="none" stroke="#7A1E12" stroke-width="3"/>
+    <path d="M216 120 q20 -20 10 -40" fill="none" stroke="#7A1E12" stroke-width="3"/>
+    <!-- 主棁 -->
+    <rect x="52" y="128" width="152" height="16" fill="#1C1A17"/>
+    <!-- 斗拱 3 组 -->
+    <g fill="#B8352F">
+      <rect x="64"  y="146" width="24" height="12"/>
+      <rect x="116" y="146" width="24" height="12"/>
+      <rect x="168" y="146" width="24" height="12"/>
+    </g>
+    <!-- 台基 -->
+    <rect x="44"  y="200" width="168" height="10" fill="#A06C3B"/>
+    <rect x="36"  y="210" width="184" height="16" fill="#8A5A2B"/>
+  </g>
+
+  <!-- 灵尊‘眼睛’ -->
+  <g>
+    <circle cx="128" cy="96" r="12" fill="#F2E5C8" stroke="#1C1A17" stroke-width="2"/>
+    <circle cx="128" cy="96" r="6"  fill="#B8352F"/>
+    <circle cx="128" cy="96" r="2"  fill="#1C1A17"/>
+  </g>
+
+  <!-- 金光光芉 -->
+  <g stroke="#C9A24C" stroke-width="2" opacity="0.8">
+    <line x1="128" y1="60" x2="128" y2="40"/>
+    <line x1="98"  y1="68" x2="86"  y2="56"/>
+    <line x1="158" y1="68" x2="170" y2="56"/>
+    <line x1="70"  y1="86" x2="50"  y2="80"/>
+    <line x1="186" y1="86" x2="206" y2="80"/>
+  </g>
+
+  <!-- 大的断裂溯迹（表现残缺） -->
+  <g stroke="#7A1E12" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M80 128 L96 148 L84 156"/>
+    <path d="M168 128 L184 148 L176 156"/>
+    <path d="M128 144 L136 172 L120 188"/>
+  </g>
+
+  <text x="128" y="246" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="16" fill="#1C1A17" letter-spacing="4">古建·灵尊</text>
+</svg>

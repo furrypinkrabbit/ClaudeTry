@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="院落前厅">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 俯视中庭 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="16" y="16" width="96" height="96" fill="#E0C98F"/>
+    <rect x="40" y="24" width="48" height="28" fill="#8A5A2B"/>
+    <rect x="20" y="72" width="20" height="30" fill="#A06C3B"/>
+    <rect x="88" y="72" width="20" height="30" fill="#A06C3B"/>
+    <path d="M40 52 L64 60 L88 52" fill="none"/>
+    <!-- 础石地砖 -->
+    <g stroke="#1C1A17" stroke-width="0.5" opacity="0.35">
+      <line x1="40" y1="62" x2="88" y2="62"/>
+      <line x1="40" y1="80" x2="88" y2="80"/>
+      <line x1="56" y1="52" x2="56" y2="90"/>
+      <line x1="72" y1="52" x2="72" y2="90"/>
+    </g>
+  </g>
+  <text x="64" y="120" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="11" fill="#1C1A17">院落前厅</text>
+</svg>

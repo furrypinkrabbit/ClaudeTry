@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="鸱吻（精英）">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 精英光环 -->
+  <circle cx="64" cy="62" r="52" fill="none" stroke="#C9A24C" stroke-width="2" stroke-dasharray="3 3"/>
+  <!-- 鸱吻形 -->
+  <g stroke="#1C1A17" stroke-width="2" stroke-linejoin="round">
+    <!-- 身体 -->
+    <path d="M22 92 L30 56 Q44 30 66 34 Q88 38 96 56 L104 92 Z" fill="#7A1E12"/>
+    <!-- 头顶鹠尾 -->
+    <path d="M92 48 Q108 34 102 20 Q94 28 88 40 Z" fill="#B8352F"/>
+    <!-- 尾巴缺失 -->
+    <path d="M22 92 L18 78 L24 80" fill="#F2E5C8" stroke-dasharray="2 2"/>
+    <!-- 鳍鲞 -->
+    <g fill="#3E5C76">
+      <path d="M44 70 q6 -4 10 0 q-4 6 -10 0 Z"/>
+      <path d="M62 74 q6 -4 10 0 q-4 6 -10 0 Z"/>
+    </g>
+    <!-- 眼 -->
+    <circle cx="82" cy="52" r="3" fill="#F2E5C8"/>
+    <circle cx="82" cy="52" r="1.5" fill="#1C1A17"/>
+  </g>
+  <!-- 血裂纹 -->
+  <path d="M60 70 L66 84 L56 92" stroke="#1C1A17" stroke-width="1.5" fill="none"/>
+  <text x="64" y="116" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="11" fill="#C9A24C" stroke="#1C1A17" stroke-width="0.3">裂鸱吻（精英）</text>
+</svg>

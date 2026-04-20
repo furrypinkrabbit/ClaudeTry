@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="榫卯加固(攻击)">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#B8352F" stroke-width="2"/>
+  <!-- 榫卯契合 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="36" y="44" width="22" height="16" fill="#A06C3B"/>
+    <rect x="58" y="48" width="6"  height="8"  fill="#8A5A2B"/>
+    <rect x="68" y="44" width="22" height="16" fill="#A06C3B"/>
+    <rect x="66" y="48" width="4"  height="8"  fill="#F2E5C8"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="12" fill="#1C1A17">榫卯加固</text>
+  <text x="64" y="114" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="10" fill="#B8352F">+ 攻击</text>
+</svg>

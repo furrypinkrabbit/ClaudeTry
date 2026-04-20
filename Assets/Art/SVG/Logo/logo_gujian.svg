@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="古建修补匠 Logo">
+  <defs>
+    <pattern id="paper" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="4" fill="#F2E5C8"/>
+      <path d="M0 4L4 0" stroke="#E8D9B5" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <!-- 朱砂圆印底 -->
+  <circle cx="128" cy="128" r="120" fill="url(#paper)" stroke="#1C1A17" stroke-width="3"/>
+  <circle cx="128" cy="128" r="112" fill="none" stroke="#B8352F" stroke-width="2"/>
+
+  <!-- 斗拱剪影（屋檐结构） -->
+  <g stroke="#1C1A17" stroke-width="3" stroke-linejoin="miter" fill="#3E5C76">
+    <!-- 屋脊 -->
+    <path d="M36 96 L128 48 L220 96 Z"/>
+    <!-- 正脊装饰 -->
+    <rect x="120" y="40" width="16" height="10" fill="#C9A24C"/>
+    <!-- 主梁 -->
+    <rect x="44"  y="96" width="168" height="16" fill="#1C1A17"/>
+    <!-- 斗拱三组 -->
+    <g fill="#B8352F">
+      <rect x="60"  y="116" width="24" height="14"/>
+      <rect x="116" y="116" width="24" height="14"/>
+      <rect x="172" y="116" width="24" height="14"/>
+    </g>
+    <g fill="#C9A24C">
+      <rect x="66"  y="132" width="12" height="10"/>
+      <rect x="122" y="132" width="12" height="10"/>
+      <rect x="178" y="132" width="12" height="10"/>
+    </g>
+    <!-- 柱 -->
+    <rect x="62"  y="146" width="12" height="44" fill="#1C1A17"/>
+    <rect x="122" y="146" width="12" height="44" fill="#1C1A17"/>
+    <rect x="182" y="146" width="12" height="44" fill="#1C1A17"/>
+  </g>
+
+  <!-- 锤子 横压中央 -->
+  <g transform="translate(128 138) rotate(-18)">
+    <rect x="-44" y="-6" width="92" height="12" rx="2" fill="#8A5A2B" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="40" y="-18" width="36" height="36" rx="3" fill="#C9A24C" stroke="#1C1A17" stroke-width="2.5"/>
+    <rect x="44" y="-14" width="28" height="6" fill="#B8352F"/>
+    <rect x="44" y="8"  width="28" height="6" fill="#7A1E12"/>
+    <!-- 锤柄缠绳 -->
+    <g stroke="#1C1A17" stroke-width="1.5">
+      <line x1="-38" y1="-6" x2="-34" y2="6"/>
+      <line x1="-28" y1="-6" x2="-24" y2="6"/>
+      <line x1="-18" y1="-6" x2="-14" y2="6"/>
+    </g>
+  </g>
+
+  <!-- 云雷纹 围边 -->
+  <g fill="none" stroke="#1C1A17" stroke-width="1.5">
+    <path d="M22 200 q6 -10 16 -4 q10 10 0 14 q-10 4 -16 -4 Z" />
+    <path d="M218 200 q6 -10 16 -4 q10 10 0 14 q-10 4 -16 -4 Z" />
+  </g>
+
+  <!-- 标题 -->
+  <g font-family="'Ma Shan Zheng','STKaiti',serif" text-anchor="middle">
+    <text x="128" y="218" font-size="24" fill="#1C1A17" font-weight="700" letter-spacing="6">古建修补匠</text>
+    <text x="128" y="236" font-size="11" fill="#7A1E12" letter-spacing="8">GU JIAN ROGUELIKE</text>
+  </g>
+</svg>

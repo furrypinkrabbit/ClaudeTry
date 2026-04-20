@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb488516a76ee44ba90dc959bad3491, type: 3}
+  m_Name: Hammer_Wood
+  m_EditorClassIdentifier: 
+  toolId: hammer_wood
+  displayName: "\u6728\u69CC"
+  flavorText: 
+  icon: {fileID: 0}
+  kind: 0
+  baseDamage: 18
+  swingCooldown: 0.5
+  range: 2
+  swingArcDeg: 110
+  staminaCost: 12
+  supportsCharge: 1
+  chargeMaxSeconds: 1.2
+  chargeDamageMul: 2
+  chargeRangeMul: 1.2
+  affinities: []
+  tuningSlots: 2
+  defaultTunings: []
+  runtimePrefab: {fileID: 474180006180542080, guid: 99d5847d83a18e34793a786adf49c4bd, type: 3}

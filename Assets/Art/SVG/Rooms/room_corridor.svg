@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="回廊通道">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="16" y="40" width="96" height="48" fill="#E0C98F"/>
+    <!-- 柱 -->
+    <g fill="#B8352F">
+      <rect x="24" y="40" width="6" height="48"/>
+      <rect x="44" y="40" width="6" height="48"/>
+      <rect x="64" y="40" width="6" height="48"/>
+      <rect x="84" y="40" width="6" height="48"/>
+      <rect x="102" y="40" width="6" height="48"/>
+    </g>
+    <!-- 棁 -->
+    <rect x="16" y="36" width="96" height="8" fill="#A06C3B"/>
+    <rect x="16" y="86" width="96" height="6" fill="#8A5A2B"/>
+    <!-- 地砖 -->
+    <g stroke="#1C1A17" stroke-width="0.5" opacity="0.4">
+      <line x1="24" y1="64" x2="108" y2="64"/>
+    </g>
+  </g>
+  <text x="64" y="120" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="11" fill="#1C1A17">回廊通道</text>
+</svg>

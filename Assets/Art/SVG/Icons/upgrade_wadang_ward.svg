@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="瓦当护佑(护盾)">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#7A1E12" stroke-width="2"/>
+  <!-- 瓦当盾状 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <circle cx="64" cy="52" r="22" fill="#3E5C76"/>
+    <circle cx="64" cy="52" r="14" fill="none" stroke="#C9A24C"/>
+    <path d="M58 46 q4 -6 12 -4 q8 2 4 8 q-4 6 -12 2 q-8 -2 -4 -6 Z" fill="#C9A24C"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="12" fill="#1C1A17">瓦当护佑</text>
+  <text x="64" y="114" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="10" fill="#7A1E12">+ 护盾</text>
+</svg>

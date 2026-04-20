@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea84f3f49404594cb184efc83e1d1b6, type: 3}
+  m_Name: Structure_DouGong_Wood
+  m_EditorClassIdentifier: 
+  structureId: 
+  displayName: 
+  culturalNote: 
+  portrait: {fileID: 0}
+  type: 0
+  material: 0
+  maxBrokenness: 40
+  repairStages: []
+  moveSpeed: 2.2
+  contactDamage: 8
+  craftsmanshipReward: 6
+  drops: []
