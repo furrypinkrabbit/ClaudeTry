@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+    <ui:VisualElement class="screen lobby">
+        <ui:VisualElement class="lobby__backdrop" />
+        <ui:VisualElement class="lobby__brand">
+            <ui:Label name="title"    class="lobby__title"    text="古建守护" />
+            <ui:Label name="subtitle" class="lobby__subtitle" text="以木为锤,修补宫阙" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="lobby__menu">
+            <ui:Button name="btn-start"     class="menu-btn menu-btn--primary" text="开始旅程" />
+            <ui:Button name="btn-shop"      class="menu-btn"                   text="匠银坊"   />
+            <ui:Button name="btn-inventory" class="menu-btn"                   text="行囊"     />
+            <ui:Button name="btn-character" class="menu-btn"                   text="师徒印记" />
+            <ui:Button name="btn-quit"      class="menu-btn menu-btn--danger"  text="辞别"     />
+        </ui:VisualElement>
+
+        <ui:Label class="lobby__footnote" text="\u7f08\u7ed9\u5de5\u5320" />
+    </ui:VisualElement>
+</ui:UXML>

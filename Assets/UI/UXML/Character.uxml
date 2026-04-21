@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+    <ui:VisualElement class="screen character">
+        <ui:VisualElement class="panel character__panel">
+            <ui:VisualElement class="panel__header">
+                <ui:Label class="panel__title" text="师徒印记" />
+                <ui:Button name="btn-close" class="panel__close" text="✕" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="character__body">
+                <ui:VisualElement class="character__portrait" />
+                <ui:VisualElement class="character__stats">
+                    <ui:Label name="stat-hp"          class="stat-row" text="气血: 100/100"  />
+                    <ui:Label name="stat-stamina"    class="stat-row" text="体力: 100"     />
+                    <ui:Label name="stat-dmg-mul"    class="stat-row" text="伤害系数: ×1.00" />
+                    <ui:Label name="stat-crit-chance" class="stat-row" text="暴击率: +0.0%"  />
+                    <ui:Label name="stat-crit-dmg"   class="stat-row" text="暴击伤害: +0.0%" />
+                    <ui:Label name="stat-speed-mul"  class="stat-row" text="移动速度: 100% (基础)" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

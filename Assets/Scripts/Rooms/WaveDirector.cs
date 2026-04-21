@@ -37,16 +37,12 @@ namespace GuJian.Rooms {
         void SpawnOne(StructureData sd) {
             if (sd == null || spawnPoints == null || spawnPoints.Length == 0) return;
             var sp = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
-
             GameObject prefab = Resources.Load<GameObject>("Prefabs/StructureEnemyBase");
 
             if (prefab != null)
             {
                 GameObject inst = Instantiate(prefab, sp.position, sp.rotation);
             }
-
-            // var inst = Instantiate(sd.portrait != null ? Resources.Load<GameObject>("Prefabs/StructureEnemyBase") : null,
-            //                      sp.position, sp.rotation);
             // 实际项目里应从 data 直接实例化它的专属 prefab
             _aliveCount++;
         }

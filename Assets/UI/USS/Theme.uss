@@ -1,0 +1,137 @@
+/* =========================================================
+   GuJian UI Theme — 古建守护 统一语言
+   颜色盘(更多参考 Art 目录的 丹/翠/金):
+   --ink:    墨黑        #1A1512
+   --paper:  宣纸米      #F1E7D3
+   --paper-2:暗暗纸       #DCCCAE
+   --gold:   鐨金        #C9A24C
+   --gold-2: 淡鐨       #D7B56E
+   --cin:    残缺朱      #7A1E12
+   --cin-2:  丹红       #A53124
+   --jade:   青瓦        #5C7769
+   --teal:   真青        #2F5E55
+   --frame:  轻框色     #37281C80
+
+   主要布局 token:
+   --gap-1:  4px   --gap-2: 10px   --gap-3: 18px   --gap-4: 28px
+   --rad-1:  4px   --rad-2: 10px
+   ========================================================= */
+
+.screen {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    /* 初始隐藏——Router 会按需显示 */
+    display: none;
+    transition-property: opacity, scale;
+    transition-duration: 0.18s, 0.18s;
+    transition-timing-function: ease-out-cubic, ease-out-cubic;
+    opacity: 0;
+    scale: 0.98 0.98;
+}
+.gj-screen--active { opacity: 1; scale: 1 1; }
+.gj-screen--paused { opacity: 0.4; scale: 0.97 0.97; }
+
+/* ---------- 纸色形象 ---------- */
+.panel {
+    background-color: #F1E7D3;
+    border-top-width: 2px; border-bottom-width: 2px;
+    border-left-width: 2px; border-right-width: 2px;
+    border-top-color: #C9A24C; border-bottom-color: #C9A24C;
+    border-left-color: #C9A24C; border-right-color: #C9A24C;
+    border-top-left-radius: 10px;    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+    padding: 18px 22px;
+    color: #1A1512;
+}
+
+.panel__header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    border-bottom-width: 1px;
+    border-bottom-color: #C9A24C;
+    padding-bottom: 8px;
+}
+.panel__title { font-size: 22px; -unity-font-style: bold; color: #7A1E12; }
+.panel__silver { color: #C9A24C; -unity-font-style: bold; }
+.panel__close {
+    background-color: transparent;
+    color: #7A1E12;
+    border-top-width: 0; border-bottom-width: 0; border-left-width: 0; border-right-width: 0;
+    font-size: 18px; padding: 4px 10px;
+    cursor: link;
+}
+.panel__close:hover { color: #A53124; }
+
+/* ---------- 菜单按钮 ---------- */
+.menu-btn {
+    min-width: 200px;
+    padding: 12px 22px;
+    margin: 6px 0;
+    background-color: #DCCCAE;
+    color: #1A1512;
+    border-top-width: 1px; border-bottom-width: 1px;
+    border-left-width: 1px; border-right-width: 1px;
+    border-top-color: #C9A24C; border-bottom-color: #C9A24C;
+    border-left-color: #C9A24C; border-right-color: #C9A24C;
+    border-top-left-radius: 4px;    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    font-size: 16px;
+    -unity-text-align: middle-center;
+    transition-property: background-color, scale;
+    transition-duration: 0.12s, 0.12s;
+}
+.menu-btn:hover { background-color: #E9D9BE; scale: 1.02 1.02; }
+.menu-btn:active { scale: 0.98 0.98; }
+.menu-btn--primary {
+    background-color: #7A1E12; color: #F1E7D3;
+    border-top-color: #A53124; border-bottom-color: #A53124;
+    border-left-color: #A53124; border-right-color: #A53124;
+}
+.menu-btn--primary:hover { background-color: #A53124; }
+.menu-btn--danger {
+    background-color: transparent; color: #7A1E12;
+}
+.menu-btn--danger:hover { color: #A53124; }
+
+/* ---------- 通用 tab ---------- */
+.tab {
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #1A1512;
+    border-top-width: 0; border-bottom-width: 2px;
+    border-left-width: 0; border-right-width: 0;
+    border-bottom-color: transparent;
+    margin-right: 6px;
+}
+.tab:hover { color: #7A1E12; }
+.tab--active {
+    -unity-font-style: bold;
+    color: #7A1E12;
+    border-bottom-color: #C9A24C;
+}
+
+/* ---------- 列行 ---------- */
+.shop-row, .inv-row {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: #E9D9BE;
+    margin: 4px 0;
+    border-top-left-radius: 4px;    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+}
+.shop-row:hover, .inv-row:hover { background-color: #F1E0BA; }
+.shop-row__name  { flex-grow: 1; color: #1A1512; }
+.shop-row__price { min-width: 80px; color: #7A1E12; -unity-font-style: bold; }
+.shop-row__buy {
+    min-width: 80px;
+    background-color: #C9A24C; color: #1A1512;
+    padding: 4px 10px;
+    border-top-width: 0; border-bottom-width: 0; border-left-width: 0; border-right-width: 0;
+    border-top-left-radius: 4px;    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+}
+.shop-row__buy:hover  { background-color: #D7B56E; }
+.shop-row__buy:disabled { opacity: 0.5; }

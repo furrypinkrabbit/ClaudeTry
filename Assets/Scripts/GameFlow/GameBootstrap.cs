@@ -32,14 +32,28 @@ namespace GuJian.GameFlow {
             if (op == null) { Debug.LogError($"Scene '{sceneName}' 未加入 Build Settings"); return; }
             op.completed += _ => {
                 var scene = SceneManager.GetSceneByName(sceneName);
-                var go = new GameObject(isLobby ? "LobbyGameMode" : "InGameGameMode");
-                SceneManager.MoveGameObjectToScene(go, scene);
-                GameModeBase mode = isLobby
-                    ? (GameModeBase)go.AddComponent<LobbyGameMode>()
-                    : go.AddComponent<InGameGameMode>();
+                GameModeBase mode;
+                if (isLobby)
+                {
+                    var go = new GameObject("LobbyGameMode");
+                    SceneManager.MoveGameObjectToScene(go, scene);
+                    mode = go.AddComponent<LobbyGameMode>();
+                }
+                else
+                {
+                    // 出路 A:优先用场景里手摆的(带 Inspector 引用),找不到再 AddComponent 兜底
+                    mode = FindAnyObjectByType<InGameGameMode>();
+                    if (mode == null)
+                    {
+                        var go = new GameObject("InGameGameMode");
+                        SceneManager.MoveGameObjectToScene(go, scene);
+                        mode = go.AddComponent<InGameGameMode>();
+                    }
+                }
                 _current = mode;
                 mode.Enter();
             };
+
         }
     }
 }

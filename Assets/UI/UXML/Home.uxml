@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+    <ui:VisualElement class="screen home">
+        <ui:VisualElement class="home__panel">
+            <ui:Label class="home__title" text="继续修补" />
+            <ui:Label class="home__hint"  text="选择本次的行程" />
+            <ui:VisualElement class="home__menu">
+                <ui:Button name="btn-continue"   class="menu-btn"                   text="继续上回" />
+                <ui:Button name="btn-new-run"    class="menu-btn menu-btn--primary" text="新的旅程" />
+                <ui:Button name="btn-back-lobby" class="menu-btn menu-btn--danger"  text="回到大厅" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

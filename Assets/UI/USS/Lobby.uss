@@ -1,0 +1,27 @@
+/* 大厅专属 */
+.lobby {
+    background-color: #1A1512;
+    align-items: center;
+    justify-content: center;
+}
+.lobby__backdrop {
+    position: absolute; left: 0; right: 0; top: 0; bottom: 0;
+    background-color: #1A1512;
+}
+.lobby__brand { align-items: center; margin-bottom: 40px; }
+.lobby__title {
+    font-size: 54px;
+    -unity-font-style: bold;
+    color: #C9A24C;
+    letter-spacing: 8px;
+    padding: 6px 18px;
+}
+.lobby__subtitle { color: #DCCCAE; font-size: 14px; letter-spacing: 2px; opacity: 0.75; }
+.lobby__menu { align-items: center; }
+.lobby__footnote {
+    position: absolute;
+    bottom: 16px;
+    color: #C9A24C;
+    opacity: 0.35;
+    font-size: 10px;
+}
