@@ -836,8 +836,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.47114044, y: -0.107539445, z: 0.058000002, w: 0.8735548}
-  m_LocalPosition: {x: 5.03, y: 9.6, z: -2.7999997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7926295, y: 1.921, z: -1.9680085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -943,9 +943,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 606225295240180628, guid: a6e29f548bd1d084ebdc130de5f5caee, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1512741457}
     - targetCorrespondingSourceObject: {fileID: 6864334936992258767, guid: a6e29f548bd1d084ebdc130de5f5caee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 449683171}
@@ -987,12 +984,12 @@ Transform:
   m_GameObject: {fileID: 1512741456}
   serializedVersion: 2
   m_LocalRotation: {x: 0.47114044, y: -0.107539445, z: 0.058000002, w: 0.8735548}
-  m_LocalPosition: {x: 1.2373707, y: 9.579, z: -4.831991}
+  m_LocalPosition: {x: 3.7926295, y: 1.921, z: -1.9680085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1566263969}
-  m_Father: {fileID: 1236975194}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 56.679, y: -14.036, z: 0}
 --- !u!114 &1512741458
 MonoBehaviour:
@@ -1013,7 +1010,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1236975194}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 6
@@ -1079,18 +1076,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.1, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0.5, y: -0.4, z: 0}
+  Damping: {x: 0.55, y: 0.5, z: 0.3}
+  ShoulderOffset: {x: 0, y: 1.5, z: -1}
   VerticalArmLength: 0.4
   CameraSide: 1
-  CameraDistance: 2
+  CameraDistance: 3
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 0
   IgnoreTag: 
-  CameraRadius: 0.2
+  CameraRadius: 0.181
   DampingIntoCollision: 0
-  DampingFromCollision: 2
+  DampingFromCollision: 1.46
 --- !u!114 &1566263971
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1247,3 +1244,4 @@ SceneRoots:
   - {fileID: 498011905}
   - {fileID: 819809764}
   - {fileID: 12149340}
+  - {fileID: 1512741457}
