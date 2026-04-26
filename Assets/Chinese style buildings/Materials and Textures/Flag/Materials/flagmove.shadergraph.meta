@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d99d5ea2e235b3746bb3a487cde1d891
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312808
+  packageName: Collection of ancient Chinese architecture
+  packageVersion: 1.0
+  assetPath: Assets/Chinese style buildings/Materials and Textures/Flag/Materials/flagmove.shadergraph
+  uploadId: 740563

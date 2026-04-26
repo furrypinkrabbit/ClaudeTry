@@ -1,0 +1,10 @@
+/* 背包 */
+.inventory {
+    background-color: rgba(26,21,18,0.72);
+    align-items: center; justify-content: center;
+}
+.inventory__panel { width: 760px; max-height: 82%; }
+.inventory__columns { flex-direction: row; flex-grow: 1; }
+.inventory__col { flex-grow: 1; padding: 0 10px; }
+.inventory__col-title { -unity-font-style: bold; color: #7A1E12; margin-bottom: 8px; }
+.inventory-list { flex-grow: 1; min-height: 400px; }

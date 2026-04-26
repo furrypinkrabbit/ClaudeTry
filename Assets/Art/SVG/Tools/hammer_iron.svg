@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="铁锤">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#3E5C76" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+  <g transform="translate(64 64) rotate(-30)">
+    <rect x="-40" y="-4" width="60" height="8" rx="2" fill="#8A5A2B" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="-40" y="-6" width="14" height="12" fill="#1C1A17" rx="1"/>
+    <rect x="14" y="-20" width="34" height="40" rx="2" fill="#3E5C76" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="14" y="-20" width="34" height="6" fill="#1C1A17"/>
+    <rect x="14" y="14"  width="34" height="6" fill="#1C1A17"/>
+    <circle cx="31" cy="0" r="5" fill="#C9A24C" stroke="#1C1A17"/>
+    <circle cx="31" cy="0" r="2" fill="#B8352F"/>
+    <!-- 极简盘长纹嘴件 -->
+    <path d="M18 -18 h28" stroke="#C9A24C" stroke-width="1"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="12" fill="#1C1A17">鸢铁锤</text>
+</svg>

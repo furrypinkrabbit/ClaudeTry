@@ -1,0 +1,20 @@
+/* Home 中心式面板 */
+.home {
+    background-color: rgba(26, 21, 18, 0.75);
+    align-items: center;
+    justify-content: center;
+}
+.home__panel {
+    background-color: #F1E7D3;
+    border-top-width: 2px; border-bottom-width: 2px;
+    border-left-width: 2px; border-right-width: 2px;
+    border-top-color: #C9A24C; border-bottom-color: #C9A24C;
+    border-left-color: #C9A24C; border-right-color: #C9A24C;
+    border-top-left-radius: 10px;    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+    padding: 40px 60px;
+    align-items: center;
+}
+.home__title { font-size: 28px; -unity-font-style: bold; color: #7A1E12; margin-bottom: 8px; }
+.home__hint  { color: #1A1512; opacity: 0.6; margin-bottom: 24px; }
+.home__menu  { align-items: center; }

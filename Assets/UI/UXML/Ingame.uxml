@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+    <ui:VisualElement class="screen ingame" picking-mode="Ignore">
+        <!-- 顶部:关卡名、当前手艺 -->
+        <ui:VisualElement class="hud-top" picking-mode="Ignore">
+            <ui:Label name="label-stage" class="hud-top__stage" text="外院前厅" />
+            <ui:Label name="label-craft" class="hud-top__craft" text="手艺 Lv.1  0/20" />
+        </ui:VisualElement>
+
+        <!-- 左下:HP + 体力 -->
+        <ui:VisualElement class="hud-bl" picking-mode="Ignore">
+            <ui:VisualElement class="bar bar--hp">
+                <ui:VisualElement name="hp-fill" class="bar__fill bar__fill--hp" />
+                <ui:Label class="bar__label" text="HP" />
+            </ui:VisualElement>
+            <ui:VisualElement class="bar bar--stamina">
+                <ui:VisualElement name="stamina-fill" class="bar__fill bar__fill--stamina" />
+                <ui:Label class="bar__label" text="体力" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- 右下:经验条 -->
+        <ui:VisualElement class="hud-br" picking-mode="Ignore">
+            <ui:VisualElement class="bar bar--xp">
+                <ui:VisualElement name="xp-fill" class="bar__fill bar__fill--xp" />
+                <ui:Label class="bar__label" text="手艺" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- 中央 banner (关卡切换 / 暴击 / 升级 时短显) -->
+        <ui:VisualElement class="hud-center" picking-mode="Ignore">
+            <ui:Label name="banner" class="banner banner--hidden" text="" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

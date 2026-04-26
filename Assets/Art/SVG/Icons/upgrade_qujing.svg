@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="曲径通幽(移速)">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#C9A24C" stroke-width="2"/>
+  <!-- 曲径 -->
+  <path d="M34 66 Q48 34 64 56 Q80 78 96 46" fill="none" stroke="#1C1A17" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 足迹 -->
+  <g fill="#B8352F">
+    <circle cx="40" cy="58" r="2"/>
+    <circle cx="52" cy="46" r="2"/>
+    <circle cx="62" cy="58" r="2"/>
+    <circle cx="74" cy="64" r="2"/>
+    <circle cx="86" cy="56" r="2"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="12" fill="#1C1A17">曲径通幽</text>
+  <text x="64" y="114" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="10" fill="#C9A24C">+ 移速</text>
+</svg>

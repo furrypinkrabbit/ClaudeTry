@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+    <ui:VisualElement class="screen inventory">
+        <ui:VisualElement class="panel inventory__panel">
+            <ui:VisualElement class="panel__header">
+                <ui:Label name="title"      class="panel__title" text="行囊" />
+                <ui:Button name="btn-close" class="panel__close" text="✕" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="inventory__columns">
+                <ui:VisualElement class="inventory__col">
+                    <ui:Label class="inventory__col-title" text="木锤" />
+                    <ui:ListView name="list-hammer" class="inventory-list" />
+                </ui:VisualElement>
+                <ui:VisualElement class="inventory__col">
+                    <ui:Label class="inventory__col-title" text="配件" />
+                    <ui:ListView name="list-tuning" class="inventory-list" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

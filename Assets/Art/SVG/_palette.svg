@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 128" role="img" aria-label="GuJian Palette">
+  <defs>
+    <style>
+      .lbl{font-family:'Ma Shan Zheng','STKaiti',serif;font-size:14px;fill:#1C1A17;text-anchor:middle}
+    </style>
+  </defs>
+  <rect width="512" height="128" fill="#F2E5C8"/>
+  <g>
+    <rect x="16"  y="20" width="64" height="64" fill="#B8352F" stroke="#1C1A17" stroke-width="2"/><text class="lbl" x="48"  y="108">朱砂红</text>
+    <rect x="96"  y="20" width="64" height="64" fill="#1C1A17"/>                                     <text class="lbl" x="128" y="108">墨黑</text>
+    <rect x="176" y="20" width="64" height="64" fill="#F2E5C8" stroke="#1C1A17" stroke-width="2"/>   <text class="lbl" x="208" y="108">宣纸米</text>
+    <rect x="256" y="20" width="64" height="64" fill="#3E5C76" stroke="#1C1A17" stroke-width="2"/>   <text class="lbl" x="288" y="108">青黛</text>
+    <rect x="336" y="20" width="64" height="64" fill="#C9A24C" stroke="#1C1A17" stroke-width="2"/>   <text class="lbl" x="368" y="108">鎏金</text>
+    <rect x="416" y="20" width="64" height="64" fill="#7A1E12" stroke="#1C1A17" stroke-width="2"/>   <text class="lbl" x="448" y="108">残缺朱</text>
+  </g>
+</svg>

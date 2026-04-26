@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         editor-extension-mode="False">
+    <ui:VisualElement class="screen shop">
+        <ui:VisualElement class="panel shop__panel">
+            <ui:VisualElement class="panel__header">
+                <ui:Label name="title"        class="panel__title"  text="匠银坊" />
+                <ui:Label name="label-silver" class="panel__silver" text="匠银 · 0" />
+                <ui:Button name="btn-close"   class="panel__close"  text="✕" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="panel__tabs">
+                <ui:Button name="tab-hammer" class="tab tab--active" text="木锤" />
+                <ui:Button name="tab-tuning" class="tab"             text="配件" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="panel__body">
+                <ui:ListView name="list-hammer" class="shop-list" virtualization-method="DynamicHeight" />
+                <ui:ListView name="list-tuning" class="shop-list" virtualization-method="DynamicHeight" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="panel__footer">
+                <ui:Label class="panel__hint" text="点击购入以扩展你的工匠行囊。" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

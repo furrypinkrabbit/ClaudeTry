@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="匠银">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 铜钱：外圆内方 -->
+  <g stroke="#1C1A17" stroke-width="2.5">
+    <circle cx="64" cy="64" r="44" fill="#C9A24C"/>
+    <rect x="52" y="52" width="24" height="24" fill="#F2E5C8"/>
+  </g>
+  <!-- 四诗铭文 -->
+  <g font-family="'Ma Shan Zheng','STKaiti',serif" text-anchor="middle" fill="#1C1A17" font-weight="700" font-size="12">
+    <text x="64" y="36">匠</text>
+    <text x="96" y="68">银</text>
+    <text x="64" y="100">通</text>
+    <text x="32" y="68">宝</text>
+  </g>
+  <!-- 边纹 -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#1C1A17" stroke-width="1" stroke-dasharray="2 2" opacity="0.4"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="斗拱承力(暴击)">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#B8352F" stroke-width="2"/>
+  <!-- 完整斗拱 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="32" y="56" width="64" height="8" fill="#8A5A2B"/>
+    <path d="M28 42 L100 42 L100 50 L28 50 Z" fill="#A06C3B"/>
+    <rect x="54" y="34" width="20" height="8" fill="#B8352F"/>
+    <!-- 芒星 -->
+    <g fill="#C9A24C">
+      <path d="M64 20 L68 32 L80 32 L70 40 L74 52 L64 44 L54 52 L58 40 L48 32 L60 32 Z"/>
+    </g>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="12" fill="#1C1A17">斗拱承力</text>
+  <text x="64" y="114" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="10" fill="#B8352F">+ 暴击</text>
+</svg>

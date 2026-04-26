@@ -1,0 +1,10 @@
+/* 商店 */
+.shop {
+    background-color: rgba(26,21,18,0.72);
+    align-items: center; justify-content: center;
+}
+.shop__panel { width: 760px; max-height: 82%; }
+.shop-list { flex-grow: 1; min-height: 420px; }
+.panel__tabs { flex-direction: row; margin-bottom: 10px; }
+.panel__footer { padding-top: 10px; border-top-width: 1px; border-top-color: #C9A24C; }
+.panel__hint { color: #1A1512; opacity: 0.55; font-size: 12px; }

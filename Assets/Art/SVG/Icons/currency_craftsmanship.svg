@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="手艺">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 印章形 "手艺" -->
+  <g stroke="#1C1A17" stroke-width="3">
+    <rect x="28" y="28" width="72" height="72" fill="#B8352F" rx="2"/>
+  </g>
+  <g font-family="'Ma Shan Zheng','STKaiti',serif" text-anchor="middle" fill="#F2E5C8" font-weight="700">
+    <text x="64" y="60" font-size="28">手</text>
+    <text x="64" y="90" font-size="28">艺</text>
+  </g>
+  <!-- 磪折 印青飞白 -->
+  <g fill="#F2E5C8" opacity="0.35">
+    <rect x="30" y="30" width="12" height="2"/>
+    <rect x="86" y="96" width="12" height="2"/>
+  </g>
+</svg>

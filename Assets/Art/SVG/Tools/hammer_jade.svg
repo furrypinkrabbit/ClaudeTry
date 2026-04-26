@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="玉锤">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#C9A24C" stroke-width="2" stroke-dasharray="2 2" opacity="0.7"/>
+  <g transform="translate(64 64) rotate(-30)">
+    <rect x="-40" y="-4" width="60" height="8" rx="2" fill="#B8352F" stroke="#1C1A17" stroke-width="2"/>
+    <g stroke="#C9A24C" stroke-width="1.2" opacity="0.9">
+      <line x1="-34" y1="-4" x2="-30" y2="4"/>
+      <line x1="-22" y1="-4" x2="-18" y2="4"/>
+      <line x1="-10" y1="-4" x2="-6" y2="4"/>
+    </g>
+    <!-- 玉锤头淡青色 -->
+    <rect x="14" y="-22" width="34" height="44" rx="6" fill="#A9C4B1" stroke="#1C1A17" stroke-width="2"/>
+    <rect x="14" y="-22" width="34" height="8"  fill="#C9A24C"/>
+    <rect x="14" y="14"  width="34" height="8"  fill="#C9A24C"/>
+    <!-- 玉脉 -->
+    <g stroke="#1C1A17" stroke-width="0.8" fill="none" opacity="0.6">
+      <path d="M20 -10 q10 6 20 2"/>
+      <path d="M20 2  q10 6 20 2"/>
+    </g>
+    <circle cx="31" cy="0" r="4" fill="#B8352F" stroke="#1C1A17"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="12" fill="#1C1A17">玉斗锤</text>
+</svg>

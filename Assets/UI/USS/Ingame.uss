@@ -1,0 +1,67 @@
+/* InGame HUD */
+.ingame { /* 透明覆盖,不拦截 pointer */ }
+.hud-top {
+    position: absolute; top: 0; left: 0; right: 0;
+    flex-direction: row; align-items: center; justify-content: space-between;
+    padding: 14px 22px;
+}
+.hud-top__stage {
+    color: #F1E7D3; -unity-font-style: bold; font-size: 18px;
+    text-shadow: 1px 1px 0 #1A1512;
+    padding: 4px 10px;
+    background-color: rgba(26, 21, 18, 0.35);
+    border-top-left-radius: 4px;    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+}
+.hud-top__craft {
+    color: #C9A24C; -unity-font-style: bold; font-size: 14px;
+    padding: 4px 10px;
+    background-color: rgba(26, 21, 18, 0.35);
+    border-top-left-radius: 4px;    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+}
+
+.hud-bl { position: absolute; left: 22px; bottom: 22px; width: 260px; }
+.hud-br { position: absolute; right: 22px; bottom: 22px; width: 260px; }
+
+.bar {
+    height: 18px;
+    background-color: rgba(26,21,18,0.55);
+    border-top-left-radius: 4px;    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    justify-content: center;
+}
+.bar__fill {
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 0;
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out-cubic;
+}
+.bar__fill--hp       { background-color: #A53124; }
+.bar__fill--stamina  { background-color: #C9A24C; }
+.bar__fill--xp       { background-color: #5C7769; }
+.bar__label {
+    color: #F1E7D3; font-size: 11px; -unity-text-align: middle-center;
+    text-shadow: 1px 1px 0 #1A1512;
+}
+
+.hud-center {
+    position: absolute; left: 0; right: 0; top: 0; bottom: 0;
+    align-items: center; justify-content: center;
+}
+.banner {
+    font-size: 26px; -unity-font-style: bold;
+    color: #C9A24C;
+    text-shadow: 2px 2px 0 #1A1512;
+    padding: 12px 24px;
+    transition-property: opacity, translate;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-out-cubic, ease-out-cubic;
+    opacity: 0;
+    translate: 0 -8px;
+}
+.banner--show   { opacity: 1; translate: 0 0; }
+.banner--hidden { opacity: 0; translate: 0 -8px; }

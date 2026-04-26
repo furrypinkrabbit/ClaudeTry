@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="台基筑基(血量)">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <circle cx="64" cy="52" r="38" fill="#F2E5C8" stroke="#3E5C76" stroke-width="2"/>
+  <!-- 三层台基 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <rect x="44" y="44" width="40" height="6" fill="#C9A24C"/>
+    <rect x="38" y="50" width="52" height="8" fill="#A06C3B"/>
+    <rect x="32" y="58" width="64" height="10" fill="#8A5A2B"/>
+  </g>
+  <text x="64" y="96"  text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="12" fill="#1C1A17">台基筑基</text>
+  <text x="64" y="114" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="10" fill="#3E5C76">+ 血量</text>
+</svg>

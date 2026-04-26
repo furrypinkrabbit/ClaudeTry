@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="雀暿">
+  <rect width="128" height="128" fill="#F2E5C8"/>
+  <!-- 雀暿：上棁下折的雕花木片 -->
+  <g stroke="#1C1A17" stroke-width="2">
+    <path d="M16 40 L112 40 L112 52 L80 52 L64 88 L48 52 L16 52 Z" fill="#A06C3B"/>
+    <!-- 装饰雕花 -->
+    <g fill="#B8352F" stroke="#1C1A17" stroke-width="1">
+      <circle cx="32" cy="46" r="4"/>
+      <circle cx="96" cy="46" r="4"/>
+      <path d="M56 62 q8 4 16 0 q-2 8 -8 10 q-6 -2 -8 -10 Z"/>
+    </g>
+    <!-- 断裂 -->
+    <path d="M48 52 L40 58 L36 54" stroke="#7A1E12" stroke-width="2" fill="none"/>
+    <path d="M80 52 L88 58 L92 54" stroke="#7A1E12" stroke-width="2" fill="none"/>
+    <!-- 缺口 -->
+    <polygon points="68,86 76,92 60,92" fill="#F2E5C8" stroke-dasharray="2 2"/>
+  </g>
+  <!-- 眼 -->
+  <g fill="#1C1A17">
+    <circle cx="50" cy="60" r="2"/>
+    <circle cx="78" cy="60" r="2"/>
+  </g>
+  <text x="64" y="116" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif" font-size="11" fill="#7A1E12">残雀暿</text>
+</svg>

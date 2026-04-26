@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 830b248d4f56585419b12bd11c716b97
+VisualEffectImporter:
+  externalObjects: {}
+  serializedVersion: 1
+  template:
+    name: 
+    category: 
+    description: 
+    icon: {instanceID: 0}
+    thumbnail: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 312808
+  packageName: Collection of ancient Chinese architecture
+  packageVersion: 1.0
+  assetPath: Assets/Chinese style buildings/myVFX/myfireVFX.vfx
+  uploadId: 740563
