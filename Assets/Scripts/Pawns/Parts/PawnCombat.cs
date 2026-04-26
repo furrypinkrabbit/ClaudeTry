@@ -8,6 +8,10 @@ namespace GuJian.Pawns.Parts {
     [RequireComponent(typeof(PawnToolSlot))]
     public class PawnCombat : PawnPartBase {
         public Animator playerAnimator;
+        public int AttackCombo = 0;
+        private bool _isAttacking;
+        private int _isAttackParamId;
+        
         [Header("Bonuses")]
         public float DamageMul = 1f;
         public float CritChanceAdd = 0f;
@@ -26,14 +30,23 @@ namespace GuJian.Pawns.Parts {
         protected override void OnBind() {
             _tool = GetComponent<PawnToolSlot>();
             Stamina = staminaMax;
+            _isAttackParamId = Animator.StringToHash("isAttack");
         }
 
         public override bool HandlesIntent(PawnIntentKind k) =>
             k == PawnIntentKind.AttackPrimary || k == PawnIntentKind.AttackHeavy
-            || k == PawnIntentKind.ChargeStart  || k == PawnIntentKind.ChargeRelease;
+            || k == PawnIntentKind.ChargeStart  || k == PawnIntentKind.ChargeRelease
+            || k == PawnIntentKind.Dodge  || k==PawnIntentKind.MoveAxis;
 
         public override void HandleIntent(in PawnIntent intent) {
             if (_tool?.Current == null) return;
+            
+            if (intent.Kind is PawnIntentKind.MoveAxis or PawnIntentKind.Dodge)
+            {
+                ClearCombo();
+                return;
+            }
+            
             var ctx = new Tools.ToolContext {
                 DamageMul = DamageMul,
                 CritChanceAdd = CritChanceAdd,
@@ -47,6 +60,7 @@ namespace GuJian.Pawns.Parts {
                     {            
                         _tool.Current.Trigger(Tools.ToolActionType.Primary, ctx);
                         playerAnimator.SetTrigger("Attack");
+                        AttackCombo++;
                     }
 
                     break;
@@ -55,6 +69,7 @@ namespace GuJian.Pawns.Parts {
                     {      
                         _tool.Current.Trigger(Tools.ToolActionType.Heavy, ctx);
                         playerAnimator.SetTrigger("Attack");
+                        AttackCombo++;
                     }
                     
                     break;
@@ -74,6 +89,9 @@ namespace GuJian.Pawns.Parts {
                         _tool.Current.Trigger(Tools.ToolActionType.ChargeRelease, ctx);
                     break;
             }
+
+            AttackCombo %= 2;
+            playerAnimator.SetInteger("AttackNum",AttackCombo);
         }
 
         bool TrySpend(float cost) {
@@ -82,10 +100,22 @@ namespace GuJian.Pawns.Parts {
             Stamina -= cost;
             return true;
         }
+        
+        private void ClearCombo()
+        {
+            AttackCombo = 0;
+            playerAnimator.SetInteger("AttackNum", 0);
+        }
 
         void Update() {
             if (!_isCharging) {
                 Stamina = Mathf.Min(staminaMax, Stamina + staminaRegen * Time.deltaTime);
+            }
+            
+            bool isAttacking = playerAnimator.GetBool(_isAttackParamId);
+            if (!isAttacking && AttackCombo != 0)
+            {
+                ClearCombo();
             }
         }
     }

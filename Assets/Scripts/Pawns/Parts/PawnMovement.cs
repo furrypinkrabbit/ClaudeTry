@@ -15,6 +15,7 @@ namespace GuJian.Pawns.Parts {
         [SerializeField] float dodgeDuration = 0.22f;
         [SerializeField] float dodgeCooldown = 0.7f;
 
+        private Vector3 localMove;
         public float MoveSpeedMul { get; set; } = 1f;
 
         private CharacterController _cc;
@@ -72,8 +73,13 @@ namespace GuJian.Pawns.Parts {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, target, rotateSpeed * dt);
             }
             
-            playerAnimator.SetFloat("SpeedX", velocity.x);
-            playerAnimator.SetFloat("SpeedY", velocity.y);
+            localMove = transform.InverseTransformDirection(velocity);
+            localMove.y = 0; // 去掉高度影响
+            localMove.Normalize();
+            
+            playerAnimator.SetFloat("SpeedX", localMove.x);
+            playerAnimator.SetFloat("SpeedY", localMove.z);
+
             
         }
     }
