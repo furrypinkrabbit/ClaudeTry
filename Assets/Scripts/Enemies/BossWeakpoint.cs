@@ -63,14 +63,19 @@ namespace GuJian.Enemies {
                 EventBus.Publish(new StructureRepairedEvent(gameObject, 12));
             }
         }
+        
+        Material _matInstance;
 
         void ApplyVisual() {
             if (highlightRenderer == null) return;
-            var mat = highlightRenderer.material;
+            // 只实例化一次，避免每次调用泄漏材质+
+             if (_matInstance == null) _matInstance = highlightRenderer.material;
             var c = _active ? activeEmission : dormantEmission;
-            if (mat.HasProperty("_EmissionColor")) mat.SetColor("_EmissionColor", c);
-            if (mat.HasProperty("_BaseColor"))     mat.SetColor("_BaseColor",     Color.Lerp(Color.black, c, 0.7f));
-            if (mat.HasProperty("_Color"))         mat.SetColor("_Color",         Color.Lerp(Color.black, c, 0.7f));
+            if (_matInstance.HasProperty("_EmissionColor")) _matInstance.SetColor("_EmissionColor", c);     
+            if (_matInstance.HasProperty("_BaseColor"))     _matInstance.SetColor("_BaseColor",     Color.Lerp(Color.black, c, 0.7f));         
+            if (_matInstance.HasProperty("_Color"))      
+                _matInstance.SetColor("_Color",  Color.Lerp(Color.black, c, 0.7f));
+            
         }
     }
 }

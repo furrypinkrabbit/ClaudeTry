@@ -16,6 +16,7 @@ namespace GuJian.Enemies {
         [SerializeField] string playerTag = "Player";
 
         float _age;
+        static GameObject _playerCache;
 
         public void OnSpawn()   { _age = 0f; }
         public void OnDespawn() { }
@@ -30,7 +31,8 @@ namespace GuJian.Enemies {
         }
 
         void Impact() {
-            var p = GameObject.FindWithTag(playerTag);
+            if (_playerCache == null) _playerCache = GameObject.FindWithTag(playerTag);
+            var p = _playerCache;
             if (p != null) {
                 var dd = Vector3.Distance(p.transform.position, transform.position);
                 if (dd <= hitRadius) {

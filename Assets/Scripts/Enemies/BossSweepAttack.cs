@@ -16,7 +16,7 @@ namespace GuJian.Enemies {
         [SerializeField] float windupTime  = 0.35f;
 
         float _pendingUntil = -1f;
-
+        GameObject _playerGo;
         public override bool HandlesIntent(PawnIntentKind k) => k == PawnIntentKind.AttackHeavy;
 
         public override void HandleIntent(in PawnIntent _) {
@@ -27,7 +27,8 @@ namespace GuJian.Enemies {
         void Update() {
             if (_pendingUntil < 0f || Time.time < _pendingUntil) return;
             _pendingUntil = -1f;
-            var p = GameObject.FindWithTag(playerTag);
+            if (_playerGo == null) _playerGo = GameObject.FindWithTag(playerTag);   
+            var p = _playerGo;
             if (p == null) return;
             Vector3 to = p.transform.position - transform.position;
             to.y = 0f;
