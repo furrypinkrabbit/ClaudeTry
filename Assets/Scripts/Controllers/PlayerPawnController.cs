@@ -12,6 +12,7 @@ namespace GuJian.Controllers {
     /// </summary>
     public class PlayerPawnController : PawnControllerBase {
         [Header("输入配置（玩家自定义）")]
+        [SerializeField] Camera gameCamera;
         [SerializeField] private InputActionAsset inputAsset;
         [SerializeField] private PlayerInputSource.Bindings bindings = new() {
             ActionMap       = "Gameplay",
@@ -49,10 +50,21 @@ namespace GuJian.Controllers {
 
         public override void Tick(float dt) {
             if (_src == null || Pawn == null) return;
-            // 每帧推送移动/朝向
             Pawn.ReceiveIntent(PawnIntent.Move(_src.ReadMove()));
-            var look = _src.ReadLook();
-            if (look.sqrMagnitude > 0.01f) Pawn.ReceiveIntent(PawnIntent.Look(look));
+
+            // 将鼠标屏幕坐标射线投影到 Y=0 平面，得到世界坐标方向
+            var screenPos = _src.ReadLook();
+            if (screenPos.sqrMagnitude > 0.01f && gameCamera != null) {
+                Ray ray = gameCamera.ScreenPointToRay(new Vector3(screenPos.x, screenPos.y, 0));
+                var plane = new UnityEngine.Plane(Vector3.up, Vector3.zero);
+                if (plane.Raycast(ray, out float dist)) {
+                    Vector3 worldPoint = ray.GetPoint(dist);
+                    Vector3 dir = worldPoint - Pawn.Transform.position;
+                    dir.y = 0;
+                    if (dir.sqrMagnitude > 0.01f)
+                        Pawn.ReceiveIntent(PawnIntent.Look(new Vector2(dir.x, dir.z)));
+                }
+            }
         }
 
         /// <summary>核心翻译：输入事件 → 语义意图。</summary>

@@ -8,6 +8,8 @@ namespace GuJian.Pawns.Parts {
     /// 与具体工具解耦：仅持有 Tools.ITool 接口。
     /// </summary>
     public class PawnToolSlot : PawnPartBase {
+        [Header("已绑定到骨骼的工具（直接场景拖入，不会被 reparent）")]
+        [SerializeField] Tools.ToolBase[] skeletonBoundTools;
         [SerializeField] Transform toolAnchor;
         [SerializeField] int maxSlots = 2;
 
@@ -18,6 +20,15 @@ namespace GuJian.Pawns.Parts {
         public Transform Anchor => toolAnchor ? toolAnchor : transform;
         public event Action<Tools.ITool> OnToolChanged;
 
+        protected override void OnBind() {
+            // 把骨骼绑定的工具自动注册到槽位，不做任何 transform 操作
+            for (int i = 0; i < skeletonBoundTools.Length && i < maxSlots; i++) {
+                if (skeletonBoundTools[i] == null) continue;
+                _slots[i] = skeletonBoundTools[i];
+                skeletonBoundTools[i].OnEquip(Pawn);
+            }
+        }
+        
         public void EquipToSlot(int idx, Tools.ITool tool) {
             if (idx < 0 || idx >= maxSlots) return;
             _slots[idx]?.OnUnequip();

@@ -12,7 +12,8 @@
         public class TopDownCameraFollow : MonoBehaviour {
             [Header("俯视角设置")]
             [SerializeField] float height = 15f;       // 摄像机高度
-            [SerializeField] float pitch  = 70f;       // 俯仰角（度），90=正顶视
+            [SerializeField] float pitch  = 45f;       // 俯仰角（度），90=正顶视
+            [SerializeField] float yaw = -5f;
             [Tooltip("跟随目标 Tag，场景里 Player GameObject 的 Tag")]
             [SerializeField] string playerTag = "Player";
 
@@ -40,7 +41,7 @@
                 // 使用 Transposer 偏移保持固定高度俯视
                 var body = _vcam.GetCinemachineComponent<CinemachineTransposer>();
                 if (body != null) {
-                    body.m_FollowOffset = new Vector3(0, height, 0);
+                    body.m_FollowOffset = new Vector3(0, height, yaw);
                     body.m_BindingMode  = CinemachineTransposer.BindingMode.WorldSpace;
                 }
                 // 调整旋转让镜头朝下
