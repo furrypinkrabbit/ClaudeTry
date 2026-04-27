@@ -1,53 +1,72 @@
-﻿namespace GuJian.Controllers
-{
-    using UnityEngine;
-    using Cinemachine;
+﻿using UnityEngine;
+using UnityEngine.InputSystem;
+using Cinemachine;
 
-    namespace GuJian.Rendering {
-        /// <summary>
-        /// 挂在 InGame 场景的 CinemachineVirtualCamera 所在 GameObject 上。
-        /// 自动找到玩家并设为 Follow/LookAt 目标。
-        /// </summary>
-        [RequireComponent(typeof(CinemachineVirtualCamera))]
-        public class TopDownCameraFollow : MonoBehaviour {
-            [Header("俯视角设置")]
-            [SerializeField] float height = 15f;       // 摄像机高度
-            [SerializeField] float pitch  = 45f;       // 俯仰角（度），90=正顶视
-            [SerializeField] float yaw = -5f;
-            [Tooltip("跟随目标 Tag，场景里 Player GameObject 的 Tag")]
-            [SerializeField] string playerTag = "Player";
+namespace GuJian.Controllers {
+    [RequireComponent(typeof(CinemachineVirtualCamera))]
+    public class TopDownCameraFollow : MonoBehaviour {
 
-            CinemachineVirtualCamera _vcam;
+        [SerializeField] string playerTag    = "Player";
+        [SerializeField] float  sensitivity  = 0.25f;
+        [SerializeField] float  pitchMin     = 5f;
+        [SerializeField] float  pitchMax     = 75f;
+        [SerializeField] float  initPitch    = 30f;
+        [SerializeField] float  initYaw      = 0f;
+        [SerializeField] float  distance     = 8f;
+        [SerializeField] float  distMin      = 3f;
+        [SerializeField] float  distMax      = 18f;
+        [SerializeField] float  smooth       = 12f;
 
-            void Awake() {
-                _vcam = GetComponent<CinemachineVirtualCamera>();
-                TryBindPlayer();
+        CinemachineVirtualCamera _vcam;
+        CinemachineTransposer    _body;
+
+        float _yaw, _pitch, _tYaw, _tPitch, _tDist;
+
+        void Awake() {
+            _vcam  = GetComponent<CinemachineVirtualCamera>();
+            _tYaw  = _yaw   = initYaw;
+            _tPitch= _pitch = initPitch;
+            _tDist = distance;
+        }
+
+        void Start() {
+            var go = GameObject.FindGameObjectWithTag(playerTag);
+            if (go) { _vcam.Follow = go.transform; _vcam.LookAt = go.transform; }
+
+            _body = _vcam.GetCinemachineComponent<CinemachineTransposer>();
+            if (_body != null)
+                _body.m_BindingMode = CinemachineTransposer.BindingMode.WorldSpace;
+        }
+
+        void Update() {
+            var mouse = Mouse.current;
+            if (mouse == null) return;
+
+            if (mouse.rightButton.isPressed) {
+                var d = mouse.delta.ReadValue();
+                _tYaw    += d.x * sensitivity;
+                _tPitch   = Mathf.Clamp(_tPitch - d.y * sensitivity, pitchMin, pitchMax);
             }
 
-            void Start() {
-                // Awake 时玩家可能还未生成，Start 再试一次
-                if (_vcam.Follow == null) TryBindPlayer();
-                ApplyTopDownBody();
-            }
+            float scroll = mouse.scroll.ReadValue().y;
+            if (scroll != 0f)
+                _tDist = Mathf.Clamp(_tDist - scroll * 0.01f, distMin, distMax);
 
-            void TryBindPlayer() {
-                var player = GameObject.FindGameObjectWithTag(playerTag);
-                if (player == null) return;
-                _vcam.Follow  = player.transform;
-                _vcam.LookAt  = player.transform;
-            }
+            float dt = Time.deltaTime;
+            _yaw     = Mathf.LerpAngle(_yaw,    _tYaw,   smooth * dt);
+            _pitch   = Mathf.LerpAngle(_pitch,  _tPitch, smooth * dt);
+            distance = Mathf.Lerp(distance, _tDist, smooth * dt);
 
-            void ApplyTopDownBody() {
-                // 使用 Transposer 偏移保持固定高度俯视
-                var body = _vcam.GetCinemachineComponent<CinemachineTransposer>();
-                if (body != null) {
-                    body.m_FollowOffset = new Vector3(0, height, yaw);
-                    body.m_BindingMode  = CinemachineTransposer.BindingMode.WorldSpace;
-                }
-                // 调整旋转让镜头朝下
-                transform.rotation = Quaternion.Euler(pitch, 0, 0);
-            }
+            if (_body == null) return;
+            float ry = _yaw   * Mathf.Deg2Rad;
+            float rp = _pitch * Mathf.Deg2Rad;
+            _body.m_FollowOffset = new Vector3(
+                 distance * Mathf.Sin(ry) * Mathf.Cos(rp),
+                 distance * Mathf.Sin(rp),
+                -distance * Mathf.Cos(ry) * Mathf.Cos(rp)
+            );
+
+            if (_vcam.Follow) transform.LookAt(_vcam.Follow.position);
         }
     }
-
 }

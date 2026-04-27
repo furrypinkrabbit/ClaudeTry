@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lobbyScene: Lobby
   ingameScene: InGame
+  skipIntro: 0
 --- !u!4 &127544090
 Transform:
   m_ObjectHideFlags: 0
@@ -381,6 +382,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &671811643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 671811646}
+  - component: {fileID: 671811645}
+  - component: {fileID: 671811644}
+  m_Layer: 0
+  m_Name: intro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &671811644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671811643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ca7254d7d0410ab39bfc33c48e9256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slides:
+  - chapter: "\u5E8F  \xB7  \u53E4\u5EFA\u5B88\u62A4"
+    title: "\u6DF7\u6C8C\u6D4A\u6C14"
+    body: "\u6545\u5BAB\u7684\u6BCF\u4E00\u5757\u7816\u3001\u6BCF\u4E00\u6839\u6881\u3001\u6BCF\u4E00\u7247\u74E6\uFF0C\n\u90FD\u627F\u8F7D\u7740\u53E4\u4EE3\u5DE5\u5320\u6570\u767E\u5E74\u7684\u667A\u6167\u3002\n\n\u800C\u4ECA\uFF0C\u4E00\u80A1\u6DF7\u6C8C\u6D4A\u6C14\u6084\u7136\u4FB5\u5165\uFF0C\n\u8BA9\u7816\u5757\u8131\u4F4D\u3001\u7ACB\u67F1\u677E\u52A8\u3001\u5C4B\u74E6\u56DB\u6563\u2026\u2026\n\n\u4F60\u662F\u6700\u540E\u4E00\u4F4D\u5B88\u62A4\u8005\u3002"
+  - chapter: "\u7B2C\u4E00\u7AE0  \xB7  \u5BAB\u5899\u7684\u300C\u7A33\u300D"
+    title: "\u78E8\u7816\u5BF9\u7F1D"
+    body: "\u6545\u5BAB\u5BAB\u5899\u4EE5\u78E8\u7816\u5BF9\u7F1D\u6280\u672F\u780C\u6210\uFF0C\n\u6BCF\u4E00\u5757\u7816\u4E25\u4E1D\u5408\u7F1D\uFF0C\u9760\u7CBE\u51C6\u54AC\u5408\u7A33\u7A33\u77D7\u7ACB\u767E\u5E74\u3002\n\n\u6D4A\u6C14\u8BA9\u7816\u5757\u8131\u79BB\u5899\u4F53\uFF0C\u56DB\u5904\u4E71\u649E\u3002\n\n\u62FF\u8D77\u6728\u69CC\uFF0C\u6572\u56DE\u53DB\u9006\u7684\u7816\u5757\uFF0C\n\u91CD\u73B0\u5DE5\u5320\u7684\u7CBE\u5BC6\u6280\u827A\u3002"
+  - chapter: "\u7B2C\u4E8C\u7AE0  \xB7  \u7ACB\u67F1\u7684\u300C\u529B\u300D"
+    title: "\u69AB\u536F\u7ED3\u6784"
+    body: "\u5BAB\u6BBF\u7684\u6728\u67F1\u4E0E\u6881\u67B6\u9760\u69AB\u536F\u8FDE\u63A5\uFF0C\n\u4E0D\u7528\u4E00\u9897\u9489\u5B50\uFF0C\u51F9\u51F8\u54AC\u5408\u5206\u6563\u91CD\u91CF\u3002\n\n\u6D4A\u6C14\u4FB5\u8680\u4E86\u6728\u6784\uFF0C\u7ACB\u67F1\u8131\u79BB\u69AB\u536F\uFF0C\n\u5927\u6BBF\u968F\u65F6\u53EF\u80FD\u5012\u584C\u3002\n\n\u6572\u6B63\u8FD9\u4E9B\u7ACB\u67F1\uFF0C\u628A\u5B83\u4EEC\u91CD\u65B0\u5361\u56DE\u69AB\u536F\u91CC\u3002"
+  - chapter: "\u7B2C\u4E09\u7AE0  \xB7  \u5C4B\u9876\u7684\u300C\u5761\u300D"
+    title: "\u5E91\u6BBF\u6392\u6C34"
+    body: "\u6545\u5BAB\u5C4B\u9876\u5E26\u4F18\u7F8E\u7684\u5761\u5EA6\u4E0E\u74E6\u5F53\u3001\u6EF4\u6C34\uFF0C\n\u9760\u5761\u5EA6\u8BA9\u96E8\u6C34\u5FEB\u901F\u6392\u8D70\uFF0C\u4FDD\u62A4\u6728\u7ED3\u6784\u4E0D\u53D7\u6F6E\u3002\n\n\u6D4A\u6C14\u8BA9\u74E6\u5F53\u7B52\u74E6\u8131\u79BB\u5C4B\u9876\uFF0C\u56DB\u5904\u5F39\u8DF3\uFF0C\n\u5C4B\u9876\u6F0F\u96E8\u3001\u7ED3\u6784\u677E\u52A8\u3002\n\n\u51FB\u843D\u8FD9\u4E9B\u74E6\u4EF6\uFF0C\u4FEE\u590D\u6392\u6C34\u7CFB\u7EDF\u3002"
+  - chapter: "BOSS\u5173  \xB7  \u592A\u548C\u6BBF\u7684\u300C\u9B42\u300D"
+    title: "\u6597\u62F1\u5DE8\u5F71"
+    body: "\u4E09\u5173\u7684\u6D4A\u6C14\u6C47\u805A\uFF0C\u8BA9\u592A\u548C\u6BBF\u7684\u6838\u5FC3\u6597\u62F1\u5B8C\u5168\u9519\u4E71\u3002\n\n\u6597\u62F1\u662F\u53E4\u4EE3\u5EFA\u7B51\u7684\u627F\u91CD\u67A2\u7EBD\uFF0C\n\u9760\u5C42\u5C42\u53E0\u52A0\u7684\u6728\u6784\u4EF6\u5C06\u5C4B\u9876\u91CD\u91CF\u4F20\u9012\u5230\u7ACB\u67F1\uFF0C\u8FD8\u80FD\u6297\u9707\u3002\n\n\u7528\u6728\u69CC\u6572\u6B63\u6BCF\u4E00\u5C42\u6784\u4EF6\uFF0C\u8BA9\u6597\u62F1\u91CD\u65B0\u54AC\u5408\uFF0C\n\u9A71\u6563\u6D4A\u6C14\uFF0C\u8BA9\u592A\u548C\u6BBF\u91CD\u5F52\u7A33\u56FA\u3002"
+--- !u!114 &671811645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671811643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 3834d822ac077ba458750c440cb90b07, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: fdc5401eb01cd0f49b556b29cacd2a67, type: 3}
+  m_SortingOrder: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+--- !u!4 &671811646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671811643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.676456, y: 9.583274, z: 53.824764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +635,7 @@ MonoBehaviour:
     stylesheets:
     - {fileID: 7433441132597879392, guid: e8ca02833250f104ea1deaf7a72ae3c9, type: 3}
     - {fileID: 7433441132597879392, guid: b2fe1f902dd386d418b4630eef96ca0d, type: 3}
-    screenTypeFullName: GuJian.UI.Screens.LobbyScreen,
+    screenTypeFullName: GuJian.UI.Screens.LobbyScreen
   - id: home
     uxml: {fileID: 9197481963319205126, guid: 1b46f554a5178564cbfff26a62a2a26a, type: 3}
     stylesheets:
@@ -746,3 +827,4 @@ SceneRoots:
   - {fileID: 1317669272}
   - {fileID: 665536560}
   - {fileID: 1653194212}
+  - {fileID: 671811646}

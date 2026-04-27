@@ -1,0 +1,135 @@
+/* ============================================================
+   开场介绍 — Intro.uss
+   复用 Theme.uss 的色彩变量约定（直接写色值，UI Toolkit 不支持 var()）
+   ============================================================ */
+
+/* 全屏根容器 */
+.intro-root {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: #0D0A07;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+}
+.intro-root--visible { opacity: 1; }
+
+/* 左右金色竖线装饰 */
+.intro-border-left {
+    position: absolute;
+    left: 48px; top: 40px; bottom: 40px;
+    width: 2px;
+    background-color: #C9A24C;
+    opacity: 0.4;
+}
+.intro-border-right {
+    position: absolute;
+    right: 48px; top: 40px; bottom: 40px;
+    width: 2px;
+    background-color: #C9A24C;
+    opacity: 0.4;
+}
+
+/* 章节编号 */
+.intro-chapter {
+    position: absolute;
+    top: 52px;
+    color: #C9A24C;
+    font-size: 13px;
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    opacity: 0.85;
+}
+
+/* 主卡片 */
+.intro-card {
+    align-items: center;
+    max-width: 680px;
+    padding: 0 32px;
+}
+
+/* 主标题 */
+.intro-title {
+    font-size: 38px;
+    -unity-font-style: bold;
+    color: #F1E7D3;
+    -unity-text-align: middle-center;
+    margin-bottom: 18px;
+    opacity: 0;
+    translate: 0 16px;
+    transition-property: opacity, translate;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-out, ease-out;
+}
+.intro-title--in { opacity: 1; translate: 0 0; }
+
+/* 分隔线 */
+.intro-divider {
+    width: 80px;
+    height: 1px;
+    background-color: #C9A24C;
+    margin-bottom: 22px;
+    opacity: 0.7;
+}
+
+/* 正文 */
+.intro-body {
+    font-size: 16px;
+    color: #DCCCAE;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    line-height: 1.7;
+    opacity: 0;
+    translate: 0 12px;
+    transition-property: opacity, translate;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-out, ease-out;
+    transition-delay: 0.15s, 0.15s;
+}
+.intro-body--in { opacity: 1; translate: 0 0; }
+
+/* 底部区域 */
+.intro-footer {
+    position: absolute;
+    bottom: 44px;
+    align-items: center;
+}
+
+/* 进度点容器 */
+.intro-dots {
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+/* 单个进度点（由代码动态添加） */
+.intro-dot {
+    width: 8px;
+    height: 8px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #37281C;
+    border-top-width: 1px; border-bottom-width: 1px;
+    border-left-width: 1px; border-right-width: 1px;
+    border-top-color: #C9A24C; border-bottom-color: #C9A24C;
+    border-left-color: #C9A24C; border-right-color: #C9A24C;
+    margin-left: 5px; margin-right: 5px;
+    transition-property: background-color, scale;
+    transition-duration: 0.2s, 0.2s;
+}
+.intro-dot--active {
+    background-color: #C9A24C;
+    scale: 1.25 1.25;
+}
+
+/* 提示文字，呼吸闪烁由代码 SetEnabled 或直接靠 USS animation 实现 */
+.intro-hint {
+    font-size: 12px;
+    color: #C9A24C;
+    opacity: 0.6;
+    letter-spacing: 2px;
+}

@@ -12,6 +12,7 @@ namespace GuJian.Enemies {
         enum State { Wander, Lock, Charge }
 
         [Header("运动")]
+        [SerializeField] Animator animator;
         [SerializeField] float wanderInterval  = 1.6f;   // Wander 中每隔多久换一次随机方向
         [SerializeField] float lockTime        = 0.45f;  // 锁定方向的可见预警时间
         [SerializeField] float chargeMaxTime   = 1.2f;   // 冲撞最长时间(避免卡在增里)
@@ -41,6 +42,7 @@ namespace GuJian.Enemies {
                     _st = State.Lock; _stTimer = 0f;
                     _chargeDir = new Vector2(to.x, to.z).normalized;
                     _chargeTarget = player.position;
+                    animator.SetTrigger("Attack");
                     emit(PawnIntent.Look(_chargeDir));
                     emit(PawnIntent.Move(Vector2.zero));
                     break;
@@ -49,6 +51,7 @@ namespace GuJian.Enemies {
                     // 短预警:保持朝向,让玩家读出“要冲了”的信息
                     emit(PawnIntent.Look(_chargeDir));
                     emit(PawnIntent.Move(Vector2.zero));
+                    animator.SetTrigger("Attack");
                     if (_stTimer >= lockTime) {
                         _st = State.Charge; _stTimer = 0f;
                     }
@@ -58,6 +61,7 @@ namespace GuJian.Enemies {
                     // 直线全速前冲,中途不改方向
                     emit(PawnIntent.Look(_chargeDir));
                     emit(PawnIntent.Move(_chargeDir * chargeSpeedMul));
+                    animator.SetTrigger("Attack");
                     bool arrived = Vector3.Distance(self.Transform.position, _chargeTarget) <= chargeArriveEps;
                     if (arrived || _stTimer >= chargeMaxTime) {
                         // 摧撞伤害由 PawnCombat.contactDamage 或 StructureData.contactDamage 处理

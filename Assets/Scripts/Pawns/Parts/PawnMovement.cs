@@ -6,7 +6,7 @@ namespace GuJian.Pawns.Parts {
     /// </summary>
     [RequireComponent(typeof(CharacterController))]
     public class PawnMovement : PawnPartBase {
-        public Animator playerAnimator;
+       [SerializeField] Animator playerAnimator;
         
         [Header("Base Stats (受升级影响)")]
         [SerializeField] float baseMoveSpeed = 4.0f;
@@ -27,6 +27,11 @@ namespace GuJian.Pawns.Parts {
 
         protected override void OnBind() {
             _cc = GetComponent<CharacterController>();
+            if (playerAnimator == null)
+            {
+                playerAnimator = GetComponentInChildren<Animator>();
+            }
+            
         }
 
         public override bool HandlesIntent(PawnIntentKind k) =>
@@ -64,22 +69,22 @@ namespace GuJian.Pawns.Parts {
             if (!_cc.isGrounded) velocity.y = -9.8f;
             _cc.Move(velocity * dt);
 
-            // 朝向：优先用 LookAxis，其次用移动方向
-            Vector3 face = _lookAxis.sqrMagnitude > 0.01f
-                ? new Vector3(_lookAxis.x, 0, _lookAxis.y)
-                : new Vector3(_moveAxis.x, 0, _moveAxis.y);
-            if (face.sqrMagnitude > 0.01f) {
-                var target = Quaternion.LookRotation(face);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, target, rotateSpeed * dt);
+            // 朝向：只跟移动方向，鼠标不影响旋转
+             var moveWorld = new Vector3(_moveAxis.x, 0, _moveAxis.y);
+             if (moveWorld.sqrMagnitude > 0.01f)
+             {
+                 var target = Quaternion.LookRotation(moveWorld);
+                 transform.rotation = Quaternion.RotateTowards(transform.rotation, target, rotateSpeed * dt);
             }
             
             localMove = transform.InverseTransformDirection(velocity);
             localMove.y = 0; // 去掉高度影响
             localMove.Normalize();
-            
-            playerAnimator.SetFloat("SpeedX", localMove.x);
-            playerAnimator.SetFloat("SpeedY", localMove.z);
-
+            if (playerAnimator is not null)
+            {
+                playerAnimator.SetFloat("X", localMove.z);
+                playerAnimator.SetFloat("Y", localMove.x);
+            }
             
         }
     }

@@ -14,6 +14,7 @@ namespace GuJian.Enemies {
         [SerializeField] float damage      = 28f;
         [SerializeField] string playerTag  = "Player";
         [SerializeField] float windupTime  = 0.35f;
+        [SerializeField] float YLow = -10f;
 
         float _pendingUntil = -1f;
         GameObject _playerGo;
@@ -37,7 +38,12 @@ namespace GuJian.Enemies {
             // 角度检测:玩家是否在 BOSS 正前方的弧内
             Vector3 fwd = transform.forward; fwd.y = 0f; fwd.Normalize();
             float ang = Vector3.Angle(fwd, to.normalized);
-            if (ang * 2f > sweepArcDeg) return;
+            transform.localScale = Vector3.Lerp(transform.localScale,new Vector3(2,2,2), ang*2f/sweepArcDeg);
+            if (ang * 2f > sweepArcDeg)
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+                return;
+            }
             var h = p.GetComponentInChildren<PawnHealth>();
             h?.TakeDamage(damage);
         }

@@ -11,6 +11,7 @@ namespace GuJian.GameFlow {
 
         [SerializeField] string lobbyScene  = "Lobby";
         [SerializeField] string ingameScene = "InGame";
+        [SerializeField] bool skipIntro = false;
 
         GameModeBase _current;
 
@@ -21,7 +22,7 @@ namespace GuJian.GameFlow {
             ServiceLocator.Register(this);
         }
 
-        void Start() { GoLobby(); }
+        void Start() { if (skipIntro) GoLobby(); }
 
         public void GoLobby()  => SwitchTo(lobbyScene,  isLobby: true);
         public void StartRun() => SwitchTo(ingameScene, isLobby: false);

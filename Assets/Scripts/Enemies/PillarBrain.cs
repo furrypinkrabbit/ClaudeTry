@@ -10,7 +10,7 @@ namespace GuJian.Enemies {
     /// </summary>
     public class PillarBrain : EnemyBrainBase {
         enum State { Approach, Telegraph, Slam, Recover }
-
+        [SerializeField] Animator animator;
         [SerializeField] float approachSpeedMul = 0.55f;
         [SerializeField] float attackRange      = 2.2f;
         [SerializeField] float telegraphTime    = 0.8f;
@@ -46,6 +46,7 @@ namespace GuJian.Enemies {
                 case State.Telegraph:
                     // 预警:站着,主机 表现上由特效/SpriteAnim 颜色改变
                     emit(PawnIntent.Move(Vector2.zero));
+                    animator.SetTrigger("Attack");
                     if (_stTimer >= telegraphTime) { _st = State.Slam; _stTimer = 0f; emit(PawnIntent.Heavy()); }
                     break;
 

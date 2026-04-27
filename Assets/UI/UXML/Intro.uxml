@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <!--
+        开场介绍幻灯片容器。
+        IntroPresenter.cs 控制 .intro-slide 的显示/隐藏，
+        以及 #label-chapter / #label-body / #label-hint 的文本。
+    -->
+    <ui:VisualElement name="intro-root" class="intro-root">
+
+        <!-- 背景装饰：左右两条金色竖线 -->
+        <ui:VisualElement class="intro-border-left" />
+        <ui:VisualElement class="intro-border-right" />
+
+        <!-- 页眉：章节编号 -->
+        <ui:Label name="label-chapter" class="intro-chapter" text="第一章" />
+
+        <!-- 主体内容区 -->
+        <ui:VisualElement class="intro-card">
+            <!-- 标题 -->
+            <ui:Label name="label-title" class="intro-title" text="宫墙的「稳」" />
+            <!-- 分隔线 -->
+            <ui:VisualElement class="intro-divider" />
+            <!-- 正文 -->
+            <ui:Label name="label-body" class="intro-body"
+                      text="故宫的宫墙以磨砖对缝砌成，每一块砖严丝合缝，&#10;靠精准咬合与结构力学稳稳矗立百年。&#10;&#10;一股混沌浊气打乱了砖块的秩序——&#10;它们脱离墙体，四处乱撞，墙身开始松动。&#10;&#10;拿起你的木槌，敲回叛逆的砖块，&#10;重现古代工匠的精密技艺。" />
+        </ui:VisualElement>
+
+        <!-- 页脚：提示 + 进度点 -->
+        <ui:VisualElement class="intro-footer">
+            <ui:VisualElement name="dot-container" class="intro-dots" />
+            <ui:Label name="label-hint" class="intro-hint" text="点击任意处继续" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

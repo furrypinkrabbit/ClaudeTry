@@ -50,7 +50,16 @@ namespace GuJian.Controllers {
 
         public override void Tick(float dt) {
             if (_src == null || Pawn == null) return;
-            Pawn.ReceiveIntent(PawnIntent.Move(_src.ReadMove()));
+            // 将输入轴映射到摄像机水平朝向
+             var raw = _src.ReadMove();
+             var cam = gameCamera != null ? gameCamera : Camera.main;
+             if (cam != null && raw.sqrMagnitude > 0.001f) {
+                 var camFwd   = cam.transform.forward; camFwd.y = 0; camFwd.Normalize();
+                 var camRight = cam.transform.right;   camRight.y = 0; camRight.Normalize();
+                  var worldMove = camFwd * raw.y + camRight * raw.x;
+                   raw = new Vector2(worldMove.x, worldMove.z);
+            } 
+             Pawn.ReceiveIntent(PawnIntent.Move(raw));
 
             // 将鼠标屏幕坐标射线投影到 Y=0 平面，得到世界坐标方向
             var screenPos = _src.ReadLook();
