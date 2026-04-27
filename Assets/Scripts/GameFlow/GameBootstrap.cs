@@ -12,6 +12,7 @@ namespace GuJian.GameFlow {
         [SerializeField] string lobbyScene  = "Lobby";
         [SerializeField] string ingameScene = "InGame";
         [SerializeField] bool skipIntro = false;
+        [SerializeField] string[] levelScenes = { "Level1", "Level2", "Level3", "InGame" };
 
         GameModeBase _current;
 
@@ -24,8 +25,8 @@ namespace GuJian.GameFlow {
 
         void Start() { if (skipIntro) GoLobby(); }
 
-        public void GoLobby()  => SwitchTo(lobbyScene,  isLobby: true);
-        public void StartRun() => SwitchTo(ingameScene, isLobby: false);
+        public void GoLobby()  => SwitchTo(lobbyScene,  isLobby: true);      
+        public void StartRun() => SwitchTo(levelScenes[0], isLobby: false);
 
         void SwitchTo(string sceneName, bool isLobby) {
             _current?.Exit();
@@ -55,6 +56,21 @@ namespace GuJian.GameFlow {
                 mode.Enter();
             };
 
+        }
+        
+        // <summary>带转场遮罩地切换到指定关卡场景。</summary>
+        public void GoLevel(string sceneName, string label = "") {
+        if (SceneTransitionUI.Instance != null)
+        SceneTransitionUI.Instance.Transition(() => SwitchTo(sceneName, isLobby: false), label);
+        else                SwitchTo(sceneName, isLobby: false);
+        }
+      //  <summary>按索引切换 levelScenes[]。</summary>
+        public void GoLevelIndex(int index, string label = "") {
+        if (index < 0 || index >= levelScenes.Length) {
+        Debug.LogWarning($"[GameBootstrap] GoLevelIndex({index}) 越界，共 {levelScenes.Length} 关");
+        return;
+        }
+        GoLevel(levelScenes[index], label);
         }
     }
 }

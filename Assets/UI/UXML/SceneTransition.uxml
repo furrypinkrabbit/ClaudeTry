@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="../USS/Theme.uss" />
+    <Style src="../USS/SceneTransition.uss" />
+    <ui:VisualElement name="transition-root" class="transition-root">
+        <ui:VisualElement name="transition-bg" class="transition-bg" />
+        <ui:Label name="transition-label" class="transition-label" text="" />
+    </ui:VisualElement>
+</ui:UXML>

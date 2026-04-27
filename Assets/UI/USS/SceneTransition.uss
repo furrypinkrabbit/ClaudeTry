@@ -1,0 +1,29 @@
+.transition-root {
+                    position: absolute;
+                    left: 0; right: 0; top: 0; bottom: 0;
+                    pointer-events: none;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+.transition-bg {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: #0D0A07;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.transition-bg--visible { opacity: 1; }
+
+.transition-label {
+    font-size: 20px;
+    color: #C9A24C;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.transition-label--visible { opacity: 1; }

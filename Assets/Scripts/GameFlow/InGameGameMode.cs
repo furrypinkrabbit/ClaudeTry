@@ -41,10 +41,23 @@ namespace GuJian.GameFlow {
             }
         }
 
-        void OnRoomCleared(RoomClearedEvent _) {
+        void OnRoomCleared(RoomClearedEvent _)
+        {
             Run.roomsCleared++;
-            if (roomManager != null && !roomManager.Next()) {
+            if (roomManager == null) return;
+            if (roomManager.HasNext)
+            {
+                // 还有下一关 → 带遮罩切换
+                int nextIndex = roomManager.Index + 1;
+                string label = $"第 {nextIndex + 1} 关";
+                GameBootstrap.Instance?.GoLevelIndex(nextIndex, label);
+
+            }
+            else
+            {
+                // 最后一关打完 → 结算
                 EventBus.Publish(new RunFinishedEvent(false, Run.structuresRepaired, Run.CalcMatterSilver()));
+
             }
         }
 
