@@ -55,11 +55,15 @@ namespace GuJian.Pawns.Parts {
             CurrentHp -= dmg;
             EventBus.Publish(new PawnDamagedEvent(Pawn.gameObject, dmg));
             OnHpChanged?.Invoke(CurrentHp, maxHp + MaxHpBonus);
+
             if (CurrentHp <= 0f) {
                 playerAnimator.SetTrigger("Dead");
+                isDead = true;  // ← 补上这行！原代码触发 Dead 但没设 isDead
+                return;         // 死了就不再播受击
             }
             playerAnimator.SetTrigger("getHit");
         }
+
 
         public void Heal(float amount) {
             if (!Pawn.IsAlive) return;

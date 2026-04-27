@@ -84,7 +84,7 @@ namespace GuJian.Pawns.Parts {
                     float held = _chargeStartTime > 0 ? Time.time - _chargeStartTime : intent.Scalar;
                     _chargeStartTime = -1f;
                     ctx.ChargeSeconds = held;
-                    playerAnimator.SetBool("ChargingHeld", false);
+                    playerAnimator.SetBool("ChargeHeld", false);  // 修正：原写的是 ChargingHeld（与 ChargeStart 不一致）
                     if (TrySpend(_tool.Current.Data.staminaCost * 1.2f))
                         _tool.Current.Trigger(Tools.ToolActionType.ChargeRelease, ctx);
                     break;
@@ -111,12 +111,24 @@ namespace GuJian.Pawns.Parts {
             if (!_isCharging) {
                 Stamina = Mathf.Min(staminaMax, Stamina + staminaRegen * Time.deltaTime);
             }
-            
-            bool isAttacking = playerAnimator.GetBool(_isAttackParamId);
-            if (!isAttacking && AttackCombo != 0)
-            {
+
+            // 检测攻击动画是否已播完，播完则清除 Combo 和 isAttack bool
+            bool anyAttackPlaying = false;
+            for (int i = 0; i < playerAnimator.layerCount; i++) {
+                var info = playerAnimator.GetCurrentAnimatorStateInfo(i);
+                if (info.IsTag("Attack") && info.normalizedTime < 1f) {
+                    anyAttackPlaying = true;
+                    break;
+                }
+            }
+
+            if (!anyAttackPlaying && AttackCombo != 0) {
                 ClearCombo();
             }
+    
+            // 攻击动画播完后重置 isAttack bool（确保融合树可以接管）
+            playerAnimator.SetBool("isAttack", anyAttackPlaying);
         }
+
     }
 }
